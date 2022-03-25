@@ -25,7 +25,7 @@
         [
             {
                 "@type": "VideoObject",
-                "contentUrl": "https://www.facebook.com/100063486369524/videos/2008381422654312",
+                "url": "https://www.facebook.com/100063486369524/videos/2008381422654312",
                 "archivedAt": "https://archive.is/EXAMPLE",
                 "creator":
                 {
@@ -35,7 +35,7 @@
             },
             {
                 "@type": "VideoObject",
-                "contentUrl": "https://twitter.com/baa3465dd891455/status/1486057108307066880",
+                "url": "https://twitter.com/i/status/1486057108307066880",
                 "archivedAt": "https://archive.is/EXAMPLE1",
                 "creator":
                 {
@@ -46,7 +46,7 @@
             },
             {
                 "@type": "VideoObject",
-                "contentUrl": "https://www.facebook.com/watch/?v=985014695406486",
+                "url": "https://www.facebook.com/watch/?v=985014695406486",
                 "archivedAt": "https://archive.is/EXAMPLE2",
                 "creator":
                 {

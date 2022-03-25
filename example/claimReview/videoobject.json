@@ -16,7 +16,7 @@
         "appearance":
         {
             "@type": "VideoObject",
-            "contentUrl": "https://twitter.com/franceinter/status/1490594446114709514",
+            "url": "https://twitter.com/franceinter/status/1490594446114709514",
             "creator":
             {
                 "@type": "Organization",
