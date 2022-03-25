@@ -1,0 +1,127 @@
+{
+    "@context": "https://schema.org",
+    "@graph":
+    [
+        {
+            "@type": "ClaimReview",
+            "datePublished": "2022-02-23 16:15",
+            "url": "https://factuel.afp.com/doc.afp.com.323Q7N9",
+            "name": "Vidéos détournées, photos recyclées : regain de désinformation autour du conflit russo-ukrainien",
+            "@context": "https://schema.org",
+            "claimReviewed": "une fille dans un bus en Ukraine (...) dans l'attente des soldats russes",
+            "itemReviewed":
+            {
+                "@type": "Claim",
+                "author":
+                {
+                    "name": "Terror Alarm",
+                    "@type": "Person"
+                },
+                "datePublished": "2022-02-12",
+                "appearance": "https://twitter.com/terror_alarm/status/1492596807544750082/photo/1"
+            },
+            "author":
+            {
+                "name": "AFP",
+                "url": "https://factcheck.afp.com/",
+                "sameAs": "https://twitter.com/AFPFactCheck",
+                "logo":
+                {
+                    "url": "https://www.afp.com/sites/all/themes/custom/afpcom/logo.png",
+                    "@type": "ImageObject"
+                },
+                "@type": "Organization"
+            },
+            "reviewRating":
+            {
+                "ratingValue": "1",
+                "bestRating": "5",
+                "worstRating": "1",
+                "alternateName": "Faux",
+                "@type": "Rating"
+            }
+        },
+        {
+            "datePublished": "2022-02-23 16:15",
+            "@type": "ClaimReview",
+            "url": "https://factuel.afp.com/doc.afp.com.323Q7N9",
+            "name": "Vidéos détournées, photos recyclées : regain de désinformation autour du conflit russo-ukrainien",
+            "@context": "https://schema.org",
+            "claimReviewed": "Troupes ukrainiennes se préparant à un combat potentiel",
+            "itemReviewed":
+            {
+                "@type": "Claim",
+                "author":
+                {
+                    "name": "Inconnu",
+                    "@type": "Person"
+                },
+                "datePublished": "2022-01-21",
+                "appearance": "https://weibo.com/1650926392/LbMiODUqI?refer_flag=1001030103_"
+            },
+            "author":
+            {
+                "name": "AFP",
+                "url": "https://factcheck.afp.com/",
+                "sameAs": "https://twitter.com/AFPFactCheck",
+                "logo":
+                {
+                    "url": "https://www.afp.com/sites/all/themes/custom/afpcom/logo.png",
+                    "@type": "ImageObject"
+                },
+                "@type": "Organization"
+            },
+            "reviewRating":
+            {
+                "ratingValue": "1",
+                "bestRating": "5",
+                "worstRating": "1",
+                "alternateName": "Faux",
+                "@type": "Rating"
+            }
+        },
+        {
+            "@type": "ClaimReview",
+            "datePublished": "2022-02-23 16:15",
+            "url": "https://factuel.afp.com/doc.afp.com.323Q7N9",
+            "name": "Vidéos détournées, photos recyclées : regain de désinformation autour du conflit russo-ukrainien",
+            "@context": "https://schema.org",
+            "claimReviewed": "BBC avertissant d'une guerre nucléaire imminente en Europe de l'est",
+            "itemReviewed":
+            {
+                "@type": "Claim",
+                "author":
+                {
+                    "name": "Inconnu",
+                    "@type": "Person"
+                },
+                "datePublished": "2022-01-20",
+                "appearance":
+                [
+                    "https://www.facebook.com/104681915311714/videos/686860666025235/?_rdc=1&_rdr",
+                    "https://www.facebook.com/toscoentertianment/videos/1307046023053075/?_rdc=1&_rdr"
+                ]
+            },
+            "author":
+            {
+                "name": "AFP",
+                "url": "https://factcheck.afp.com/",
+                "sameAs": "https://twitter.com/AFPFactCheck",
+                "logo":
+                {
+                    "url": "https://www.afp.com/sites/all/themes/custom/afpcom/logo.png",
+                    "@type": "ImageObject"
+                },
+                "@type": "Organization"
+            },
+            "reviewRating":
+            {
+                "ratingValue": "1",
+                "bestRating": "5",
+                "worstRating": "1",
+                "alternateName": "Faux",
+                "@type": "Rating"
+            }
+        }
+    ]
+}

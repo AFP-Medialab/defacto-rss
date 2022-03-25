@@ -1,0 +1,55 @@
+{
+    "@context": "https://schema.org",
+    "@type": "ClaimReview",
+    "datePublished": "2022-02-17 01:47",
+    "url": "https://factuel.afp.com/doc.afp.com.322R23R",
+    "claimReviewed": "Une police anti-émeutes de l'Union européenne sur les Champs-Elysées",
+    "author":
+    {
+        "name": "AFP",
+        "url": "https://factcheck.afp.com/",
+        "sameAs": "https://twitter.com/AFPFactCheck",
+        "@type": "Organization"
+    },
+    "itemReviewed":
+    {
+        "@type": "Claim",
+        "author":
+        {
+            "name": "LoupnoirAlpha",
+            "@type": "Person"
+        },
+        "datePublished": "2022-02-15",
+        "appearance":
+        [
+            {
+                "@type": "ImageObject",
+                "contentUrl": "https://twitter.com/LoupnoirAlpha/status/1493483404276420612/photo/1",
+                "archivedAt": "https://archive.is/pZn8v",
+                "creator":
+                {
+                    "@type": "Person",
+                    "name": "LoupnoirAlpha"
+                }
+            },
+            {
+                "@type": "ImageObject",
+                "contentUrl": "https://www.facebook.com/151335048220780/posts/2139858189368446/",
+                "archivedAt": "https://archive.is/anga1",
+                "creator":
+                {
+                    "@type": "Person",
+                    "name": "MediaMenteurs"
+                }
+            }
+        ]
+    },
+    "reviewRating":
+    {
+        "ratingValue": "1",
+        "bestRating": "5",
+        "worstRating": "1",
+        "alternateName": "Trompeur",
+        "@type": "Rating"
+    }
+}

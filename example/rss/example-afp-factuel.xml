@@ -1,0 +1,85 @@
+<rss version="2.0" xml:base="https://factuel.afp.com/" xmlns:schema="https://schema.org" xmlns:media="http://search.yahoo.com/mrss/"
+xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+     <title>AFP Factuel</title>
+     <link>https://factuel.afp.com</link>
+     <language>fr</language>
+     <item>
+         <guid>http://d.afp.com/doc-9zb9xd-5</guid>
+         <title>Les juifs français 'protégés' par Pétain ? La thèse d'Eric Zemmour récusée par les historiens</title>
+         <link>https://factuel.afp.com/doc.afp.com.9ZB9XD</link>
+         <schema:review encodingFormat="application/ld+json"><![CDATA[
+         {
+            "@context": "https://schema.org",
+            "@type": "ClaimReview",
+            "datePublished": "2022-02-11 11:40",
+            "url": "",
+            "claimReviewed": "Pétain a protégé les juifs français",
+            "itemReviewed":
+            {
+                "author":
+                {
+                    "name": "Eric Zemmour",
+                    "@type": "Person"
+                },
+                "datePublished": "2022-02-07",
+                "appearance": "https://twitter.com/franceinter/status/1490594446114709514 ",
+                "@type": "Claim"
+            },
+            "author":
+            {
+                "name": "AFP",
+                "url": "https://factcheck.afp.com/",
+                "sameAs": "https://twitter.com/AFPFactCheck",
+                "logo":
+                {
+                    "url": "https://www.afp.com/sites/all/themes/custom/afpcom/logo.png",
+                    "@type": "ImageObject"
+                },
+                "@type": "Organization"
+            },
+            "reviewRating":
+            {
+                "ratingValue": "1",
+                "bestRating": "5",
+                "worstRating": "1",
+                "alternateName": "Faux",
+                "@type": "Rating"
+            }
+        }
+         ]]>
+         </schema:review>
+         <content:enclosed><![CDATA[
+         <h2><span data-contrast="none" xml:lang="FR-FR"><span data-ccp-parastyle="heading 2">Eric Zemmour a affirmé que</span><span data-ccp-parastyle="heading 2">Pétain</span><span data-ccp-parastyle="heading 2">avait</span><span data-ccp-parastyle="heading 2">"protégé</span>
+            <span data-ccp-parastyle="heading 2">les juifs</span><span data-ccp-parastyle="heading 2">françai</span>
+            <span data-ccp-parastyle="heading 2">s"</span><span data-ccp-parastyle="heading 2">pendant l'Occupation, en procédant à</span>
+            <span data-ccp-parastyle="heading 2">un "troc</span><span data-ccp-parastyle="heading 2">sin</span>
+            <span data-ccp-parastyle="heading 2">i</span><span>  ....</span></span></h2><span class="e-afp-update-note">
+                <time datetime="2022-02-11T12:38:00+0100">11 février 2022</time>revoici avec bonne orthographe de Raul Hillberg, ajoute précisions sur le nombre de juifs déportés depuis la France</span>
+            </span>]]></content:enclosed>
+         <enclosure length="3513775" type="image/jpeg" url="https://hosting.afp.com/factcheck-rss/FR/medias/0bb409e64dd535010b71bc704dd08b93ccb129c3-highRes.jpg"/>
+         <media:content fileSize="3513775" height="3327" type="image/jpeg" url="https://hosting.afp.com/factcheck-rss/FR/medias/0bb409e64dd535010b71bc704dd08b93ccb129c3-highRes.jpg" width="4500">
+           <media:description>Le maréchal Pétain et le chancelier allemand Adolf Hitler, le 24 novembre 1940 à Montoire-sur-le-Loir.</media:description>
+           <media:credit>AFP</media:credit>
+         </media:content>
+         <author>Julien NGUYEN DANG</author>
+         <author>Jeremy TORDJMAN</author>
+         <author>AFP France</author>
+         <category>Location/France</category>
+         <category>Media topic/Conflits, guerres et paix</category>
+         <category>Media topic/Science et technologie</category>
+         <category>Media topic/Politique</category>
+         <category>Media topic/Politique/Elections</category>
+         <category>Media topic/Politique/Elections/Campagne électorale</category>
+         <category>Media topic/Société</category>
+         <category>Media topic/Science et technologie/Sciences sociales</category>
+         <category>Media topic/Science et technologie/Sciences sociales/Histoire</category>
+         <category>Media topic/Conflits, guerres et paix/Massacre</category>
+         <category>Media topic/Religion et croyance</category>
+         <category>Media topic/Société/Discrimination</category>
+         <category>Media topic/Société/Discrimination/Racisme</category>
+         <category>Tags/Elections 2022</category>
+         <pubDate>Fri, 11 Feb 2022 11:40:39 +0100</pubDate>
+     </item>
+    </channel>
+  </rss>

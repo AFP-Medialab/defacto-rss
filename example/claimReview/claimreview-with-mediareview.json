@@ -1,0 +1,82 @@
+{
+    "@context": "https://schema.org",
+    "@type": "ClaimReview",
+    "name": "Non, Vladimir Poutine n'a pas ignoré la poignée de main d'Emmanuel Macron",
+    "datePublished": "2022-02-08 12:59",
+    "url": "https://factuel.afp.com/doc.afp.com.9YM7U4",
+    "claimReviewed": "Vladimir Poutine a ignoré la poignée de main d'Emmanuel Macron",
+    "associatedMediaReview":
+    {
+        "@type": "MediaReview",
+        "datePublished": "2021-09-02",
+        "url": "https://factuel.afp.com/doc.afp.com.9YM7U4",
+        "author":
+        {
+            "@type": "Organization",
+            "name": "AFP",
+            "url": "https://factcheck.afp.com/",
+            "sameAs": "https://twitter.com/AFPFactCheck"
+        },
+        "mediaAuthenticityCategory": "EditedOrCroppedContent",
+        "originalMediaContextDescription": "Centenaire de l'Armistice de 1918 : Arrivée de Vladimir Poutine à l'Arc de Triomphe",
+        "originalMediaLink": "https://youtu.be/HPZoY7u20BY",
+        "itemReviewed":
+        {
+            "@type": "MediaReviewItem",
+            "mediaItemAppearance":
+            [
+                {
+                    "@type": "VideoObject",
+                    "contentUrl": "https://www.facebook.com/100063486369524/videos/2008381422654312",
+                    "archivedAt": "https://perma.cc/B4TG-EFFE",
+                    "creator":
+                    {
+                        "@type": "Person",
+                        "name": "Lokal Antillais"
+                    }
+                },
+                {
+                    "@type": "VideoObject",
+                    "contentUrl": "https://twitter.com/baa3465dd891455/status/1486057108307066880",
+                    "archivedAt": "https://perma.cc/NR8G-FHXU",
+                    "creator":
+                    {
+                        "@type": "Person",
+                        "name": "Lait bel",
+                        "url": "https://twitter.com/baa3465dd891455"
+                    }
+                },
+                {
+                    "@type": "VideoObject",
+                    "contentUrl": "https://www.facebook.com/watch/?v=985014695406486",
+                    "creator":
+                    {
+                        "@type": "Person",
+                        "name": " Mali. 24 TV"
+                    }
+                }
+            ]
+        }
+    },
+    "author":
+    {
+        "@type": "Organization",
+        "@id": "https://factcheck.afp.com/",
+        "name": "AFP",
+        "url": "https://factcheck.afp.com/",
+        "sameAs": "https://twitter.com/AFPFactCheck",
+        "logo":
+        {
+            "@type": "ImageObject",
+            "url": "https://factuel.afp.com/sites/all/themes/custom/afpblog/v2/assets/img/Logo_AFP.svg"
+        }
+    },
+    "reviewRating":
+    {
+        "@type": "Rating",
+        "ratingValue": "1",
+        "bestRating": "5",
+        "worstRating": "1",
+        "alternateName": "Vidéo tronquée et trompeuse"
+    }
+}
