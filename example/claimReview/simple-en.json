@@ -1,0 +1,42 @@
+{
+    "@context": "https://schema.org",
+    "@type": "ClaimReview",
+    "claimReviewed": "Video shows Russian soldiers landing in Ukraine in 2022",
+    "name": "Old video of Russian paratroopers jumping from plane shared with false claim about 'invasion of Ukraine'",
+    "datePublished": "2022-03-25 10:10",
+    "url": "https://factcheck.afp.com/doc.afp.com.326A3U7",
+    "itemReviewed":
+    {
+        "@type": "Claim",
+        "datePublished": "2022-02-24",
+        "appearance": "https://www.facebook.com/kashmirnews1658/videos/728945791437637/",
+        "author":
+        {
+            "@type": "Person",
+            "name": "Multiple sources"
+        }
+    },
+    "author":
+    {
+        "@type": "Organization",
+        "@id": "https://factcheck.afp.com/",
+        "name": "AFP",
+        "url": "https://factcheck.afp.com/",
+        "sameAs": "https://twitter.com/AFPFactCheck",
+        "logo":
+        {
+            "@type": "ImageObject",
+            "url": "https://factuel.afp.com/sites/all/themes/custom/afpblog/v2/assets/img/Logo_AFP.svg",
+            "width": "",
+            "height": ""
+        }
+    },
+    "reviewRating":
+    {
+        "@type": "Rating",
+        "ratingValue": "1",
+        "bestRating": "5",
+        "worstRating": "1",
+        "alternateName": "False"
+    }
+}
