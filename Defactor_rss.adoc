@@ -6,19 +6,7 @@ v1.1-preview-1
 :toclevels: 4
 
 :Numbered:
-ifdef::env-github[]
-:sourcedir: foo/
-endif::[]
-ifndef::env-github[]
 :sourcedir: examples
-endif::[]
-ifdef::env-github[]
-:sectiondir: https://github.com/AFP-Medialab/defacto-rss/blob/main
-endif::[]
-ifndef::env-github[]
-:sectiondir: .
-endif::[]
-
 :revision: v1.1-preview-1
 :doctype: book
 :icons: font
@@ -60,6 +48,6 @@ However, it remains a state of the art of good practices, a recommendation, to s
 
 It is therefore more of an objective to be achieved within the framework of the project than a strict requirement.
 
-include::{sectiondir}/sections/rss_elements.adoc[]
+include::sections/rss_elements.adoc[]
 
-include::{sectiondir}/sections/schema_review.adoc[]
+include::sections/schema_review.adoc[]
