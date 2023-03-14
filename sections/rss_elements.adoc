@@ -24,8 +24,8 @@ The full RSS format specification can be accessed at https://www.rssboard.org/rs
 https://www.rssboard.org/rss-profile#element-channel-item
 |===
 
-include::rss/item_rss.adoc[0]
+include::rss/item_rss.adoc[]
 
-include::rss/media_rss.adoc[0]
+include::rss/media_rss.adoc[]
 
-include::rss/feed_rss.adoc[0]
+include::rss/feed_rss.adoc[]
