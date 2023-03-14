@@ -1,0 +1,31 @@
+:Numbered:
+
+== RSS elements
+The description of the recommended RSS pivot format reuses the standards defined by the RSS 2.0 format as well as the existing extensions.
+The full RSS format specification can be accessed at https://www.rssboard.org/rss-2-0-1.
+
+=== RSS feeds
+[cols="1h,5"]
+|===
+2+| Elements
+
+| channel | Definition of the fact-checking operator
+|===
+
+=== channel
+[cols="1h,5"]
+|===
+2+| Elements
+
+| title | Title of the RSS feed
+| link | Link of the RSS feed or homepage of the site
+| language | Language of the RSS feed
+| item | An *item* for each publication of a verification article (fact-check).
+https://www.rssboard.org/rss-profile#element-channel-item
+|===
+
+include::rss/item_rss.adoc[]
+
+include::rss/media_rss.adoc[]
+
+include::rss/feed_rss.adoc[]

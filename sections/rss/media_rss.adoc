@@ -1,0 +1,77 @@
+:sourcedir: ../../examples
+=== Media RSS - media:content
+Media RSS elements are defined here: https://www.rssboard.org/media-rss.namespace *http://search.yahoo.com/mrss/* prefixed with *media*.
+
+The use of elements defined by the media-rss extension allows adding metadata on media contained in the article.
+Attributes and child elements of *media:content*. 
+[cols="1h,5"]
+|===
+2+| Attributes https://www.rssboard.org/media-rss#media-content
+
+| url | Link to media content.
+| fileSize | Size in bytes of media content.
+| height | Height display size of the content.
+| width | Width display size of the content.
+| type | Media mime type.
+|===
+
+[cols="1h,5a"]
+|===
+2+| Elements
+
+| media:credit  | Media credit
+Optional attributes:
+
+* *_scheme_*  => possible values ​​are *_urn:ebu (default)_* or *_urn:yvs_*. attribute role
+* *_role_* => value defined by domain scheme. By default, *_urn:ebu_* ​​are defined by the European Broadcasting Union Role Codes. 
+
+https://www.rssboard.org/media-rss#media-credit 
+| media:copyright | Media copyright information
+
+Optional attribute:
+
+* *_url_* => link to terms of use or copyright information.
+
+https://www.rssboard.org/media-rss#media-copyright 
+| media:description | Short description of the media.
+
+Optional attribute:
+
+* *_type_* => type of description text. Two possible values: *_plain_* (default), *_html_*.
+
+https://www.rssboard.org/media-rss#media-description 
+
+
+| media:player |Allows to embed a remote player to play a media (audio or video) via an iframe. This element is required only if a direct media url attribute is not specified in the media:content element. It has the following attributes:
+
+* *_url_*: URL of the player that plays the media (required attribute)
+* *_height_*: height of the player (optional)
+* *_width_*: width of player (optional)
+
+https://www.rssboard.org/media-rss#media-player 
+
+
+| media:embed | Sometimes player-specific embed code is needed for a player to play any video or audio. The media:embed element allows inclusion of such information in the form of key-value pairs with the media:param subelement.
+
+https://www.rssboard.org/media-rss#media-embed 
+
+| media:thumbnail | Allows particular images to be used as representative images for the media object. This element can be used typically in combination with the media:embed element, to provide a representative image of a video.
+Attributes:
+
+* *_url_*: URL of the representative image
+* *_width_*: image width
+* *_height_*: image height
+
+https://www.rssboard.org/media-rss#media-thumbnails 
+|===
+
+==== media:group
+The media:group element can be used to group multiple media:content elements that have the same content in different forms, for example, different resolutions.
+
+.Example: content distributed with different resolutions.
+[source,xml]
+include::{sourcedir}/rss/example-3.xml[]
+
+.Example: multimedia object embed
+[source,xml]
+include::{sourcedir}/rss/example-4.xml[]

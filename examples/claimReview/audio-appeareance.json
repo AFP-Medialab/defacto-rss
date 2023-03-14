@@ -1,0 +1,20 @@
+{
+	"appearance":
+	{
+    	  "@type": "AudioObject",
+        "url": "https://www.franceinter.fr/emissions/le-7-9/le-7-9-du-lundi-07-fevrier-2022",
+    	  "contentUrl": "https://media.radiofrance-podcast.net/podcast09/10241-07.02.2022-ITEMA_22925015-2022F10761S0038-22.mp3",
+    	  "description": "Pétain and the Jews of France",
+    	  "name": "The 7/9",
+    	  "duration": "9188",
+    	  "encodingFormat": "mp3",
+    	  "startTime": "01:46:52",
+    	  "endTime": "01:48:42",
+    	  "designer":
+    	  {
+        	"@type": "Organization",
+        	"name": "France Inter"
+    	  }
+	}
+}
+

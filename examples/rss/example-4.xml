@@ -1,0 +1,12 @@
+<media:content>
+  <media:player url="https://peertube.fr/videos/embed/7bc5577c-b711-4a2e-9d58-1af327416688"/>
+  <media:embed>
+    <media:param name="width">850</media:param>
+    <media:param name="height">480</media:param>
+    <media:param name="title">JDLL</media:param>
+    <media:param name="allowFullScreen">true</media:param>
+    <media:param name="frameborder">0</media:param>
+    <media:param name="allow">encrypted-media; picture-in-picture</media:param>
+  </media:embed>
+  <media:thumbnail url="https://peertube.fr/lazy-static/previews/2bd21b07-80a1-4dbe-8694-93f8cd805fd1.jpg" height="480" width="850"/>
+</media:content>

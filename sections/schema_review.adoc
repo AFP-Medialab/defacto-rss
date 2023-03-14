@@ -1,0 +1,23 @@
+:Numbered:
+
+== schema:review
+
+The element *_schema:review_* is an enrichment of the RSS format which contains the expression of *_ClaimReview_* and *_MediaReview_* defined by the Schema.org community. The content is expressed in a *_CDATA_* to escape XML validation and is in JSON-LD format  https://www.w3.org/TR/json-ld/.
+
+The ClaimReview and MediaReview are subtypes of the same Review type defining the following common structure:
+
+[cols="1h,2, 5"]
+|===
+3+| https://schema.org/Review[Review] Properties
+
+| url | https://schema.org/URL[URL] | Link to the page hosting the article.
+| datePublished | https://schema.org/DateTime[DateTime], https://schema.org/Date[Date] | Date of publication of the fact-checking article.
+| author | https://schema.org/Organization[Organization], https://schema.org/Person[Person] | Author of the fact-checking or fact-checking article. It can be a person or an organization.
+| itemReviewed | https://schema.org/Claim[Claim], https://schema.org/MediaReviewItem[MediaReviewItem] | Definition of the claim verified by the fact-checker, or MediaReviewItem
+Full definitions at https://schema.org/Claim and https://schema.org/MediaReviewItem.
+| reviewRating | https://schema.org/Rating[Rating] | Rating of the statement or media item.
+|===
+
+include::review/review_rating.adoc[]
+
+include::review/review_claimReview.adoc[]

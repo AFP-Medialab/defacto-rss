@@ -1,0 +1,118 @@
+:sourcedir: ../../examples
+=== Item
+In addition to the existing RSS elements, the pivot format defines additional elements allowing the additional support of useful data.
+https://www.rssboard.org/rss-specification#extendingRss 
+
+These elements use the following namespaces:
+
+[cols="~1h,3,3"]
+|===
+| Prefix | Namespace | Support
+
+| schema | https://schema.org | Schema.org community-defined elements for the support of ClaimReview and MediaReview
+https://schema.org 
+| media | http://search.yahoo.com/mrss/ | RSS module used as a complement to to the <enclosure> element defining the media used by the article.
+https://www.rssboard.org/media-rss 
+| content | http://purl.org/rss/1.0/modules/content/ | RSS 1.0 module for supporting website content in any format.
+https://web.resource.org/rss/1.0/modules/content/ 
+| atom | http://www.w3.org/2005/Atom | Atom community-defined elements
+|===
+
+[cols="1h,5a"]
+|===
+2+| Elements
+
+| title | Article title
+https://www.rssboard.org/rss-profile#element-channel-textinput-title 
+| guid | Unique identifier of the article.
+
+Attribute:
+
+* isPermaLink
+** true (default): in that case, the guid must be a permanent URL of the article
+** false : in that case, the guid must respect the format defined by http://www.faqs.org/rfcs/rfc4151.html[Tag URI scheme].
+
+https://www.rssboard.org/rss-profile#element-channel-item-guid 
+| schema:version | Article version. Increment number for each revision.
+| link | URL  of the fact check article on your site
+https://www.rssboard.org/rss-profile#element-channel-item-link 
+| pubDate | Publication date of the article in dateTime format. The recommended DE FACTO date time format is https://en.wikipedia.org/wiki/ISO_8601[ISO 8601] with the time zone indicated as an offset from UTC, for instance: 2022-04-29T11:36:31+01:00.
+
+https://www.rssboard.org/rss-profile#element-channel-item-pubdate 
+| atom:updateDate | Last article update date in dateTime format
+| schema:review | An element containing ClaimReview and/or MediaReview to describe the statement or media that was checked. 
+The content is in json-ld format escaped into a CDATA section.
+Attribute:
+
+* *encodingFormat* (mandatory) => defines the mime type of the content. For ClaimReview and MediaReview elements, the type is always *application/ld-json*
+| content:encoded | Full content or the first paragraphs of the article in HTML format escaped into a CDATA section.
+This content is meant to be automatically ingested by Content Management Systems or other automatic processes.
+DE FACTO is expected to get the full content to feed its CMS.
+https://www.rssboard.org/rss-profile#namespace-elements-content-encoded 
+https://web.resource.org/rss/1.0/modules/content/ 
+| description | Short summary or first paragraph of the article in text. Essential element for RSS readers.
+https://www.rssboard.org/rss-profile#element-channel-item-description 
+| enclosure | Illustrative image of the article. For compatibility with RSS aggregators, there should be no more than one *enclosure*. 
+Required attributes:
+
+* url => media link 
+* type => media mime type
+* length => media size
+
+https://www.rssboard.org/rss-profile#element-channel-item-enclosure 
+| media:content or  media:group | An element which supplements the enclosure element for additional description of any type of media. If there are several contents, the element is repeated. If the same content in different formats, *media:group* is used.
+https://www.rssboard.org/media-rss#primary-elements 
+| author | Name of the author of the article. The element is repeated when there are several authors.
+https://www.rssboard.org/rss-profile#element-channel-item-author 
+| category | Definition of a category linked to the article. This can be done with free text or by using a taxonomy defined by the *domain* in the case of a controlled vocabulary. 
+The element is repeated when there are several categories.
+https://www.rssboard.org/rss-profile#element-channel-item-category 
+|===
+
+==== Support for IPTC codes in the category element
+In order to standardize the content of *categories*, it is possible to use the codes defined by the IPTC or other standardized domains.
+The definition of the domain to which the codes belong is specified by the use of the *domain*.
+
+===== Examples
+The use of IPTC codes in category elements is done via the *domain*.
+
+.IPTC Category
+[source, XML]
+-----
+<category domain=”https://cv.iptc.org/newscodes/subjectcode”>04008033</category>
+-----
+
+.Media topic
+[source,xml]
+-----
+<category domain=”https://iptc.org/standards/media-topics”>2000337</category>
+-----
+
+===== Example with categories defined by an AFP factcheck
+.Media topic in texte
+[source,xml]
+include::{sourcedir}/rss/example-1.xml[]
+
+.Media topic with IPTC defined codes
+[source,xml]
+include::{sourcedir}/rss/example-2.xml[]
+
+==== ISO 316 Country Code 6
+The country codes defined by the ISO 3166 standard can be used by specifying one of the following values ​​for the *domain* :
+
+* https://www.iso.org/iso-3166-2 => 2-letters country code
+* https://www.iso.org/iso-3166-3 => 3-letters country
+
+.code Example Country Code
+[source,xml]
+-----
+<category>Location/France</category>
+<category domain=”https://www.iso.org/iso-3166-2”>EN</category>
+<category domain=”https://www.iso.org/iso-3166-3”>ENG</category>
+-----
+
+.Country code with Geonames
+[source,xml]
+-----
+<category domain=”https://www.geonames.org”>2988507</category>
+-----

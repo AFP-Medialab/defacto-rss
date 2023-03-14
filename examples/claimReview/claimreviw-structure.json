@@ -1,0 +1,26 @@
+{
+    "@context": "https://schema.org",
+   "@type": "ClaimReview",
+   "claimReviewed": "Claim description",
+   "datePublished": "2022-02-11 11:40",
+   "url": "http://article_link",
+   "itemReviewed":
+   {
+      "@type": "Claim"
+      // Claim to check
+   },
+   "author":
+   {
+       "name": "name of the organization that authored the fact check",
+       "@type": "Organization"
+   },
+   "reviewRating":
+   {
+       "ratingValue": "1",
+       "bestRating": "5",
+       "worstRating": "1",
+       "alternateName": "False",
+       "@type": "Rating"
+   }
+}
+

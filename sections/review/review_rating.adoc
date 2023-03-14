@@ -1,0 +1,41 @@
+:sourcedir: ../../examples
+:type_number: https://schema.org/Number[Number]
+=== ReviewRating
+The full definition of the *_reviewRating_* is defined at https://schema.org/Rating
+Numerical rating values ​​are defined by fact-checking systems.
+Values ​​are set from worst to best.
+
+Example scoring:
+
+* 1 = "False"
+* 2 = "Mostly false"
+* 3 = "Half true"
+* 4 = "Mostly true"
+* 5 = "True"
+
+[cols="1h,2, 5"]
+|===
+3+| https://schema.org/ReviewRating[ReviewRating] Properties
+
+| @type | Fixed Value | Rating
+| alternateName | https://schema.org/Text[Text] | 
+Assessing the truthfulness of the statement by a word or short text. There is no controlled vocabulary for this value.
+| bestRating | {type_number} |  Best numerical rating according to the scale defined for the fact-checking system.
+| worstRating | {type_number} | Worst possible value according to the scale defined for the fact-checking system. The value must be less than *_bestRating_*.
+| ratingValue | {type_number} | Rating assigned to the declaration between the *_bestRating_* and *_worstRating_* ​​if these are provided.
+| additionalType | https://schema.org/URL[URL] | Enumeration of controlled values ​​related to the alternateName property.
+|===
+
+.Example Rating
+[source,json]
+include::{sourcedir}/claimReview/rating.json[]
+
+.Example values ​​for the alternateName (indexed by https://toolbox.google.com/factcheck/explorer[Google FactCheck Explorer])
+
+|===
+| False | https://toolbox.google.com/factcheck/explorer/search/false;hl=en
+| Misleading | https://toolbox.google.com/factcheck/explorer/search/misleading;hl=en
+| Unsupported | https://toolbox.google.com/factcheck/explorer/search/unsupported;hl=en
+| Missing context | https://toolbox.google.com/factcheck/explorer/search/missing%20context;hl=en
+| Partly false | https://toolbox.google.com/factcheck/explorer/search/partly%20false;hl=en
+|===

@@ -1,0 +1,11 @@
+{
+    "reviewRating":
+  {
+      "ratingValue": "1",
+      "bestRating": "5",
+      "worstRating": "1",
+      "alternateName": "False",
+      "@type": "Rating"
+  }
+}
+

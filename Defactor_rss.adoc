@@ -1,0 +1,53 @@
+= A Guide to a RSS pivot format, including ClaimReview and MediaReview: For Fact Checks Feed Providers
+Bertrand Goupil <bertrand.goupil@afp.com>
+v1.1-preview-1
+:toc:
+:toc-title: Content
+:toclevels: 4
+
+:Numbered:
+:sourcedir: examples
+:revision: v1.1-preview-1
+:doctype: book
+:icons: font
+//:pdf-page-size: Letter
+:draftdate: March 14th 2023
+:tpvercheck: 3.5.2
+:imagesdir: images
+:source-highlighter: pygments
+:pygments-style: paraiso-dark
+
+image::defacto.jpg[]
+
+[cols="1,5"]
+|===
+| Versions | Authors 
+
+| 0.1 | Bertrand Goupil, Denis Teyssou (AFP Medialab) 
+| 0.2 | Hugues Lafarge (AFP) 
+| 0.3 | Bertrand Goupil (AFP) 
+| 0.4 | Benjamin Ooghe-Tabanou (Sciences Po médialab) 
+| 0.5 | Denis Teyssou (AFP) 
+| 1.0 | Stéphane Laurière (XWiki SAS) 
+| {revision} | Bertrand Goupil (AFP) 
+|===
+
+image::defacto-partners.jpg[]
+[sidebar]
+Project cofunded by the European Commission in the frame of the Connecting Europe Facility (CEF) - Telecommunications Sector (Contrat n° INEA/CEF/ICT/A2020/2394372)
+
+{toc}
+
+== Introduction
+
+This document, produced as part of the European (https://defacto-observatoire.fr[DE FACTO]) project, is a guide to set up a RSS pivot format including the ClaimReview and MediaReview specifications defined by the Schema.org consortium, for fact-checking articles.
+
+This guide is intended to provide a common pivot format for the fact-checking supplier’s partners of the DeFacto project. All items listed are important for distributing fact-checking articles with a maximum of metadata.
+
+However, it remains a state of the art of good practices, a recommendation, to set up the richest possible RSS feed for the purposes of automating as much as possible content ingestion within the EDMO regional and national hubs, as well as improving indexing, referencing, and data reuse e.g. to build disinformation databases.
+
+It is therefore more of an objective to be achieved within the framework of the project than a strict requirement.
+
+include::sections/rss_elements.adoc[]
+
+include::sections/schema_review.adoc[]

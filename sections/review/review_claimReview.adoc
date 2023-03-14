@@ -1,0 +1,133 @@
+:icons: font
+:sourcedir: ../../examples/claimReview
+:type_number: https://schema.org/Number[Number]
+:type_text: https://schema.org/Text[Text]
+:type_media_review: https://schema.org/MediaReview[MediaReview]
+:type_organization: https://schema.org/Organization[Organization]
+:type_person: https://schema.org/Person[Person]
+:type_url: https://schema.org/URL[URL]
+:type_date: https://schema.org/Date[Date]
+:type_date_time: https://schema.org/DateTime[DateTime]
+:type_creative_work: https://schema.org/CreativeWork[CreativeWork]
+:type_time: https://schema.org/Time[Time]
+:type_distance: https://schema.org/Distance[Distance]
+:type_quantitative_value: https://schema.org/QuantitativeValue[QuantitativeValue]
+=== ClaimReview
+The expression of a ClaimReview defines additional properties compared to the Review type.
+
+The full definition is available at https://schema.org/ClaimReview
+
+[cols="1h,2, 5"]
+|===
+3+| https://schema.org/ClaimReview[ClaimReview] Properties
+
+| @context | Fixed Value | https://schema.org
+| @type | Fixed Value | https://schema.org/ClaimReview[ClaimReview]
+| claimReviewed | {type_text} | Short summary of the claim to be verified.
+| associatedMediaReview | {type_media_review} | MediaReview associated with the ClaimReview. This property will list media related to the statement that have been verified. (cf {type_media_review})
+|===
+
+.ClaimReview structure example
+[source,json]
+include::{sourcedir}/claimreviw-structure.json[]
+
+==== ItemReviewed for ClaimReview
+This property contains the description of the claim that is checked by the fact-checker in ClaimReview. +
+The full definition of the itemReviewed property is defined at https://schema.org/Claim.
+
+[cols="1h,2, 5"]
+|===
+3+| https://schema.org/ItemReviewed[ItemReviewed] Properties
+
+| @type | Fixed Value | Type of the item reviewed. The type is always _Claim_
+| author | {type_organization}, {type_person} | Author of the claim being checked. It can be a person or an organization.
+| url | {type_url} | Link in support of the verified declaration.
+| datePublished | {type_date_time}, {type_date} | Date of the statement
+| firstAppearance | {type_url}, {type_creative_work} | Link or description in which the statement first appears.
+| appearance | {type_url}, {type_creative_work}, Array[{type_url} or {type_creative_work}] | Links or descriptions of objects in which the statement appears. If there are several, the content is in the form of an array of CreativeWork links or descriptions
+|===
+
+===== Appearance with links
+The property *_appearance_*, defined on https://schema.org/appearance, indicates the occurrences where the declaration being checked is found. +
+The simplest representation is an URL accessible on the internet to the resource where the declaration is located (website, social network, etc.). +
+The most complex representation can be a description of material content (book, film, podcast, photography, etc.) of the CreativeWork type. +
+If the declaration appears in more than one place, the value of the *_appearance_* is an array. +
+The *_appearance_* is found exclusively in an *_itemReview_* of type *_Claim_*.
+
+.Example with a single referenced URL
+[source,json]
+-----
+{
+	"appearance": "https://www.facebook.com/100063486369524/videos/2008381422654312"
+}
+-----
+
+.Example with several URLs
+[source,json]
+----
+{
+	"appearance":
+	[
+    "https://www.facebook.com/100063486369524/videos/2008381422654312",
+    "https://twitter.com/baa3465dd891455/status/1486057108307066880"
+	]
+}
+----
+NOTE: In the case of several links, the author defined in the itemReview is not necessarily the author of all the referenced links. To associate an author or a creator to each link, you must use the CreativeWork type for each *_appearance_*.
+
+===== Appearance CreativeWork
+In order to give a finer description than a declaration, the property *_appearance_* can contain the occurrences of several media described by the type {type_creative_work}. +
+Using the CreativeWork type is sufficient to define all types. The list of properties below covers the requirements for embedding media (text, photo, video and audio).
+
+WARNING: the CreativeWork type is a generic type. It is advisable to use https://schema.org/CreativeWork#subtypes[subtypes] like MediaObject, Article, Blog, WebPage, etc. 
+
+[cols="1h,2, 5"]
+|===
+3+|  https://schema.org/appearance[appearance] Properties
+
+| @type | {{type_creative_work} | Sets the creativeWork type of the itemReview.
+The general value is CreativeWork which is suitable for all content. It is advisable to specialize the contents by using the subtypes of CreativeWork and to use the properties specific to the subtype used.
+https://schema.org/CreativeWork#subtypes
+| url | {type_url} | Link to the content of the claim, usually the web page where the claim is contained.
+| archivedAt | {type_url} | Link to an archive provider where the link defined in *_url_*  is archived.
+| creator | {type_organization}, {type_person} | Creator of the content of this CreativeWork. Not to be confused with the author of the statement.
+| name | {type_text} | Name of the object.
+| abstract | {type_text} | Description of the object.
+|===
+
+If the URL of the claim refers to a media (photo, video or audio), the type used should be MediaObject. In addition to the above properties, MediaObject properties can be added as a complement. 
+
+[cols="1h,2, 5a"]
+|===
+3+|  https://schema.org/MediaObject[MediaObject] Properties
+
+| @type | https://schema.org/MediaObject[MediaObject] | CreativeWork subtype for media assets. +
+The subtype should be specified for more granularity.
+
+* https://schema.org/AudioObject[AudioObject]
+* https://schema.org/VideoObject[VideoObject]
+* https://schema.org/ImageObject[ImageObject]
+| contentUrl | {type_url} | Link to the original media content (audio, image or video file).
+| contentSize | {type_text} |Media file size.
+| duration | https://schema.org/Duration[Duration] | Duration of the media (audio or video).
+| startTime | {type_date_time}, {type_time} | Starting timecode for an audio or video extract.
+| endTime |  {type_date_time}, {type_time} |End timecode for an audio or video clip.
+| height | {type_distance}, {type_quantitative_value} | Height display size of the media.
+| width | {type_distance}, {type_quantitative_value} | Width display size of the media.
+| encodingFormat | {type_text} | Mime type of the media.
+| uploadedDate | {type_date} | Date the media was uploaded.
+|===
+
+===== CreativeWork
+.AudioObject - Extract to audio track
+[source,json]
+include::{sourcedir}/audio-appearance.json[]
+
+.VideoObject - Multiple videos of the same content on different links.
+[source,json]
+include::{sourcedir}/video-appearance.json[]
+
+.ImageObject - Same image shared on different links.
+[source,json]
+include::{sourcedir}/image-appearance.json[]
+
