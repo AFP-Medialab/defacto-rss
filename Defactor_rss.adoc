@@ -3,9 +3,10 @@ Bertrand Goupil <bertrand.goupil@afp.com>
 v1.1-preview-1
 :toc:
 :toc-title: Content
-:toclevels: 4
+:toclevels: 5
+:sectnums:
+:sectnumlevels: 5
 
-:Numbered:
 :sourcedir: examples
 :revision: v1.1-preview-1
 :doctype: book
@@ -35,8 +36,6 @@ image::defacto.jpg[]
 image::defacto-partners.jpg[]
 [sidebar]
 Project cofunded by the European Commission in the frame of the Connecting Europe Facility (CEF) - Telecommunications Sector (Contrat n° INEA/CEF/ICT/A2020/2394372)
-
-{toc}
 
 == Introduction
 
