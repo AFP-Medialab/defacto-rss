@@ -1,24 +1,28 @@
+
 = A Guide to a RSS pivot format, including ClaimReview and MediaReview: For Fact Checks Feed Providers
-Bertrand Goupil <bertrand.goupil@afp.com>
-v1.1-preview-1
-:toc:
+:doctype: book
+//:notitle:
+:toc: macro
 :toc-title: Content
 :toclevels: 5
 :sectnums:
 :sectnumlevels: 5
 
+:imagesdir: images
+
 :sourcedir: examples
 :revision: v1.1-preview-1
-:doctype: book
+
 :icons: font
 //:pdf-page-size: Letter
 :draftdate: March 14th 2023
 :tpvercheck: 3.5.2
-:imagesdir: images
+
 :source-highlighter: pygments
 :pygments-style: paraiso-dark
 
 image::defacto.jpg[]
+{doctitle}
 
 [cols="1,5"]
 |===
@@ -37,6 +41,9 @@ image::defacto-partners.jpg[]
 [sidebar]
 Project cofunded by the European Commission in the frame of the Connecting Europe Facility (CEF) - Telecommunications Sector (Contrat n° INEA/CEF/ICT/A2020/2394372)
 
+<<<
+toc::[]
+<<<
 == Introduction
 
 This document, produced as part of the European (https://defacto-observatoire.fr[DE FACTO]) project, is a guide to set up a RSS pivot format including the ClaimReview and MediaReview specifications defined by the Schema.org consortium, for fact-checking articles.

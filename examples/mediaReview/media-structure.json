@@ -1,32 +1,28 @@
 {
-	"@context": "https://schema.org",
-	"@type": "MediaReview",
-	"datePublished": "2022-02-24",
-	"url": "Link URL of the article",
-	"author":
-	{
-    	"@type": "Organization",
-    	"name": "AFP"
-	},
-	"mediaAuthenticityCategory": "Media authenticity value",
-	"originalMediaContextDescription": "Original Media Source Description",
-	"originalMediaLink": "Original Media URL",
-	"associatedClaimReview":
-	{
-    	"@type": "ClaimReview",
-    	"claimReviewed": "description of the associated claim"
-	},
-	"itemReviewed":
-	{
-    	"@type": "MediaReviewItem",
-    	// Definition of reviewed media
-	) },
-	"reviewRating":
-	{
-    	"ratingValue": "1",
-    	"bestRating": "5",
-    	"worstRating": "1",
-    	"alternateName": "False",
-    	"@type": "Rating"
-	}
+  "@context": "https://schema.org",
+  "@type": "MediaReview",
+  "datePublished": "2022-02-24",
+  "url": "Link URL of the article",
+  "author": {
+    "@type": "Organization",
+    "name": "AFP"
+  },
+  "mediaAuthenticityCategory": "Media authenticity value",
+  "originalMediaContextDescription": "Original Media Source Description",
+  "originalMediaLink": "Original Media URL",
+  "associatedClaimReview": {
+    "@type": "ClaimReview",
+    "claimReviewed": "description of the associated claim"
+  },
+  "itemReviewed": {
+    "@type": "MediaReviewItem",
+	// Definition of reviewed media
+  },
+  "reviewRating": {
+    "ratingValue": "1",
+    "bestRating": "5",
+    "worstRating": "1",
+    "alternateName": "False",
+    "@type": "Rating"
+  }
 }

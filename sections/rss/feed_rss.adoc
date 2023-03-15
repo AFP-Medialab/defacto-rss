@@ -1,5 +1,5 @@
 :sourcedir: ../../examples
 === RSS Feed
-.Example Simple Example
+.Simple Example
 [source,xml]
 include::{sourcedir}/rss/example-afp-factuel.xml[]

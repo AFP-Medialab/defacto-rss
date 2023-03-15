@@ -15,7 +15,7 @@ Attributes and child elements of *media:content*.
 | type | Media mime type.
 |===
 
-[cols="1h,5a"]
+[cols="2h,5a"]
 |===
 2+| Elements
 

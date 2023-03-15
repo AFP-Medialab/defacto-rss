@@ -1,67 +1,59 @@
 {
-    "@context": "https://schema.org",
-    "@type": "MediaReview",
-    "datePublished": "2021-09-02",
-    "url": "https://factuel.afp.com/doc.afp.com.9YM7U4",
-    "author":
-    {
-        "@type": "Organization",
-        "name": "AFP",
-        "url": "https://factcheck.afp.com/",
-        "sameAs": "https://twitter.com/AFPFactCheck"
-    },
-    "mediaAuthenticityCategory": "EditedOrCroppedContent",
-    "originalMediaContextDescription": "Centenaire de l'Armistice de 1918 : Arrivée de Vladimir Poutine à l'Arc de Triomphe",
-    "originalMediaLink": "https://youtu.be/HPZoY7u20BY",
-    "associatedClaimReview":
-    {
-        "@type": "ClaimReview",
-        "claimReviewed": "Vladimir Poutine a ignoré la poignée de main d'Emmanuel Macron"
-    },
-    "itemReviewed":
-    {
-        "@type": "MediaReviewItem",
-        "mediaItemAppearance":
-        [
-            {
-                "@type": "VideoObject",
-                "url": "https://www.facebook.com/100063486369524/videos/2008381422654312",
-                "archivedAt": "https://archive.is/EXAMPLE",
-                "creator":
-                {
-                    "@type": "Person",
-                    "name": "Lokal Antillais"
-                }
-            },
-            {
-                "@type": "VideoObject",
-                "url": "https://twitter.com/i/status/1486057108307066880",
-                "archivedAt": "https://archive.is/EXAMPLE1",
-                "creator":
-                {
-                    "@type": "Person",
-                    "name": "Lait bel",
-                    "url": "https://twitter.com/baa3465dd891455"
-                }
-            },
-            {
-                "@type": "VideoObject",
-                "url": "https://www.facebook.com/watch/?v=985014695406486",
-                "archivedAt": "https://archive.is/EXAMPLE2",
-                "creator":
-                {
-                    "@type": "Person",
-                    "name": " Mali. 24 TV"
-                }
-            }
-        ]
-    },
-    "reviewRating":
-    {
-        "ratingValue": "1",
-        "bestRating": "5",
-        "worstRating": "1",
-        "alternateName": "Faux",
-        "@type": "Rating"
-    }
+  "@context": "https://schema.org",
+  "@type": "MediaReview",
+  "datePublished": "2021-09-02",
+  "url": "https://factuel.afp.com/doc.afp.com.9YM7U4",
+  "author": {
+    "@type": "Organization",
+    "name": "AFP",
+    "url": "https://factcheck.afp.com/",
+    "sameAs": "https://twitter.com/AFPFactCheck"
+  },
+  "mediaAuthenticityCategory": "EditedOrCroppedContent",
+  "originalMediaContextDescription": "Centenaire de l'Armistice de 1918 : Arrivée de Vladimir Poutine à l'Arc de Triomphe",
+  "originalMediaLink": "https://youtu.be/HPZoY7u20BY",
+  "associatedClaimReview": {
+    "@type": "ClaimReview",
+    "claimReviewed": "Vladimir Poutine a ignoré la poignée de main d'Emmanuel Macron"
+  },
+  "itemReviewed": {
+    "@type": "MediaReviewItem",
+    "mediaItemAppearance": [
+      {
+        "@type": "VideoObject",
+        "url": "https://www.facebook.com/100063486369524/videos/2008381422654312",
+        "archivedAt": "https://archive.is/EXAMPLE",
+        "creator": {
+          "@type": "Person",
+          "name": "Lokal Antillais"
+        }
+      },
+      {
+        "@type": "VideoObject",
+        "url": "https://twitter.com/i/status/1486057108307066880",
+        "archivedAt": "https://archive.is/EXAMPLE1",
+        "creator": {
+          "@type": "Person",
+          "name": "Lait bel",
+          "url": "https://twitter.com/baa3465dd891455"
+        }
+      },
+      {
+        "@type": "VideoObject",
+        "url": "https://www.facebook.com/watch/?v=985014695406486",
+        "archivedAt": "https://archive.is/EXAMPLE2",
+        "creator": {
+          "@type": "Person",
+          "name": " Mali. 24 TV"
+        }
+      }
+    ]
+  },
+  "reviewRating": {
+    "ratingValue": "1",
+    "bestRating": "5",
+    "worstRating": "1",
+    "alternateName": "Faux",
+    "@type": "Rating"
+  }
 }

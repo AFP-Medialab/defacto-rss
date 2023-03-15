@@ -7,7 +7,7 @@ The element *_schema:review_* is an enrichment of the RSS format which contains 
 
 The ClaimReview and MediaReview are subtypes of the same Review type defining the following common structure:
 
-[cols="1h,2, 5"]
+[cols="2h,2, 5"]
 |===
 3+| https://schema.org/Review[Review] Properties
 

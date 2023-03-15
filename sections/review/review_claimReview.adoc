@@ -17,7 +17,7 @@ The expression of a ClaimReview defines additional properties compared to the Re
 
 The full definition is available at https://schema.org/ClaimReview
 
-[cols="1h,2, 5"]
+[cols="2h,1, 3"]
 |===
 3+| https://schema.org/ClaimReview[ClaimReview] Properties
 
@@ -35,7 +35,7 @@ include::{sourcedir}/claimreviw-structure.json[]
 This property contains the description of the claim that is checked by the fact-checker in ClaimReview. +
 The full definition of the itemReviewed property is defined at https://schema.org/Claim.
 
-[cols="1h,2, 5"]
+[cols="2h,2, 5"]
 |===
 3+| https://schema.org/ItemReviewed[ItemReviewed] Properties
 
@@ -81,11 +81,11 @@ Using the CreativeWork type is sufficient to define all types. The list of prope
 
 WARNING: the CreativeWork type is a generic type. It is advisable to use https://schema.org/CreativeWork#subtypes[subtypes] like MediaObject, Article, Blog, WebPage, etc. 
 
-[cols="1h,2, 5"]
+[cols="2h,2, 5"]
 |===
 3+|  https://schema.org/appearance[appearance] Properties
 
-| @type | {{type_creative_work} | Sets the creativeWork type of the itemReview.
+| @type | {type_creative_work} | Sets the creativeWork type of the itemReview.
 The general value is CreativeWork which is suitable for all content. It is advisable to specialize the contents by using the subtypes of CreativeWork and to use the properties specific to the subtype used.
 https://schema.org/CreativeWork#subtypes
 | url | {type_url} | Link to the content of the claim, usually the web page where the claim is contained.
@@ -97,7 +97,7 @@ https://schema.org/CreativeWork#subtypes
 
 If the URL of the claim refers to a media (photo, video or audio), the type used should be MediaObject. In addition to the above properties, MediaObject properties can be added as a complement. 
 
-[cols="1h,2, 5a"]
+[cols="2h,2, 5a"]
 |===
 3+|  https://schema.org/MediaObject[MediaObject] Properties
 

@@ -13,7 +13,7 @@ Example scoring:
 * 4 = "Mostly true"
 * 5 = "True"
 
-[cols="1h,2, 5"]
+[cols="2h,2, 5"]
 |===
 3+| https://schema.org/ReviewRating[ReviewRating] Properties
 
@@ -32,6 +32,7 @@ include::{sourcedir}/claimReview/rating.json[]
 
 .Example values ​​for the alternateName (indexed by https://toolbox.google.com/factcheck/explorer[Google FactCheck Explorer])
 
+[cols="1h,3"]
 |===
 | False | https://toolbox.google.com/factcheck/explorer/search/false;hl=en
 | Misleading | https://toolbox.google.com/factcheck/explorer/search/misleading;hl=en

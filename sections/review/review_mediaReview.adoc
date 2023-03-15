@@ -8,7 +8,7 @@ The MediaReview is an alternative to ClaimReview and specializes in online media
 MediaReview are expressed in JSON-LD. See: https://www.w3.org/TR/json-ld/
 The full definition is available at https://schema.org/MediaReview.
 
-[cols="1h,2, 5a"]
+[cols="4h,2, 3a"]
 |===
 3+|  https://schema.org/MediaReview[MediaReview] Properties
 
@@ -37,7 +37,7 @@ include::{sourcedir}/media-structure.json[]
 This property contains the description of media occurrences checked by the fact-checker in MediaReview. +
 The full definition of the itemReviewed property is defined at https://schema.org/MediaReviewItem.
 
-[cols="1h,2, 5a"]
+[cols="3h,2, 4a"]
 |===
 3+|  https://schema.org/itemReviewed[ItemReviewed] Properties
 
