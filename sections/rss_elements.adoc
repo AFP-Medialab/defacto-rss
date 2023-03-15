@@ -1,4 +1,5 @@
-:Numbered:
+:sectnums:
+:sectnumlevels: 4
 
 == RSS elements
 The description of the recommended RSS pivot format reuses the standards defined by the RSS 2.0 format as well as the existing extensions.

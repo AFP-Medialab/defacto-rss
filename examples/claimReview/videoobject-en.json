@@ -8,7 +8,10 @@
   "itemReviewed": {
     "@type": "Claim",
     "datePublished": "2022-02-24",
-    "appearance": "https://www.facebook.com/kashmirnews1658/videos/728945791437637/",
+    "appearance": {
+      "@type": "VideoObject",
+      "contentUrl": "https://www.facebook.com/kashmirnews1658/videos/728945791437637/"
+    },
     "author": {
       "@type": "Person",
       "name": "Multiple sources"

@@ -1,4 +1,5 @@
-:Numbered:
+:sectnums:
+:sectnumlevels: 4
 
 == schema:review
 
@@ -21,3 +22,5 @@ Full definitions at https://schema.org/Claim and https://schema.org/MediaReviewI
 include::review/review_rating.adoc[]
 
 include::review/review_claimReview.adoc[]
+
+include::review/review_mediaReview.adoc[]

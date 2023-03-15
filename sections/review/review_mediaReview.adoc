@@ -1,0 +1,57 @@
+:sourcedir: ../../examples/mediaReview
+:type_text: https://schema.org/Text[Text]
+:type_url: https://schema.org/URL[URL]
+
+=== MediaReview
+The MediaReview is an alternative to ClaimReview and specializes in online media content. As defined by schema.org, best practices for linking ClaimReview and MediaReview are not fully finalized. However, it is possible to link the 2 concepts with the *_associatedClaimReview_* for a ClaimReview. The reciprocity to link a MediaReview to a ClaimReview is done with the *_associatedMediaReview_* (cf https://schema.org/ClaimReview[ClaimReview]).
+
+MediaReview are expressed in JSON-LD. See: https://www.w3.org/TR/json-ld/
+The full definition is available at https://schema.org/MediaReview.
+
+[cols="1h,2, 5a"]
+|===
+3+|  https://schema.org/MediaReview[MediaReview] Properties
+
+| @type | Value Fixed | MediaReview
+| mediaAuthenticityCategory | https://schema.org/MediaManipulationRatingEnumeration[MediaManipulationRatingEnumeration], https://schema.org/MediaManipulationRatingEnumeration[MediaManipulationRatingEnumeration] | enumeration.
+Possible values ​​are:
+
+* DecontextualizedContent
+* EditedOrCroppedContent
+* OriginalMediaContent
+* SatireOrParodyContent
+* StagedContent
+* TransformedContent
+| originalMediaContextDescription | {type_text} | Text describing the original media
+| originalMediaLink | {type_url} | Link to the original media that has been modified
+| associatedClaimReview | https://schema.org/ClaimReview[ClaimReview] | ClaimReview in which the processed media appears.
+| itemReviewed | https://schema.org/MediaReviewItem[MediaReviewItem] | Definition of verified media occurrences
+|===
+
+==== MediaReview structure
+
+[source,json]
+include::{sourcedir}/media-structure.json[]
+
+==== ItemReviewed for MediaReview
+This property contains the description of media occurrences checked by the fact-checker in MediaReview. +
+The full definition of the itemReviewed property is defined at https://schema.org/MediaReviewItem.
+
+[cols="1h,2, 5a"]
+|===
+3+|  https://schema.org/itemReviewed[ItemReviewed] Properties
+
+| @type | Value Fixed | MediaReviewItem
+| mediaItemAppearance | https://schema.org/MediaObject[MediaObject] | CreativeWork subtype for media content.
+The subtype should be specified for more granularity.
+
+* https://schema.org/AudioObject[AudioObject]
+* https://schema.org/VideoObject[VideoObject]
+* https://schema.org/ImageObject[ImageObject]
+|===
+
+.Example with several videos of the same content whose content has been modified
+[source,json]
+include::{sourcedir}/multi-media-appearance.json[]
+
+

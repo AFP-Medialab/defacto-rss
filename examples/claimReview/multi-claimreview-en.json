@@ -1,0 +1,110 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ClaimReview",
+      "datePublished": "2022-02-23 16:15",
+      "url": "https://factuel.afp.com/doc.afp.com.323Q7N9",
+      "name": "Manipulated videos, recycled photos: renewed disinformation about the Russian-Ukrainian conflict",
+      "@context": "https://schema.org",
+      "claimReviewed": "a girl on a bus in Ukraine (...) waiting for Russian soldiers",
+      "itemReviewed": {
+        "@type": "Claim",
+        "author": {
+          "name": "Terror Alarm",
+          "@type": "Person"
+        },
+        "datePublished": "2022-02-12",
+        "appearance": "https://twitter.com/terror_alarm/status/1492596807544750082/photo/1"
+      },
+      "author": {
+        "name": "AFP",
+        "url": "https://factcheck.afp.com/",
+        "sameAs": "https://twitter.com/AFPFactCheck",
+        "logo": {
+          "url": "https://www.afp.com/sites/all/themes/custom/afpcom/logo.png",
+          "@type": "ImageObject"
+        },
+        "@type": "Organization"
+      },
+      "reviewRating": {
+        "ratingValue": "1",
+        "bestRating": "5",
+        "worstRating": "1",
+        "alternateName": "False",
+        "@type": "Rating"
+      }
+    },
+    {
+      "datePublished": "2022-02-23 16:15",
+      "@type": "ClaimReview",
+      "url": "https://factuel.afp.com/doc.afp.com.323Q7N9",
+      "name": "Manipulated videos, recycled photos: renewed disinformation about the Russian-Ukrainian conflict",
+      "@context": "https://schema.org",
+      "claimReviewed": "Ukrainian troops preparing for potential combat",
+      "itemReviewed": {
+        "@type": "Claim",
+        "author": {
+          "name": "Unknown",
+          "@type": "Person"
+        },
+        "datePublished": "2022-01-21",
+        "appearance": "https://weibo.com/1650926392/LbMiODUqI?refer_flag=1001030103_"
+      },
+      "author": {
+        "name": "AFP",
+        "url": "https://factcheck.afp.com/",
+        "sameAs": "https://twitter.com/AFPFactCheck",
+        "logo": {
+          "url": "https://www.afp.com/sites/all/themes/custom/afpcom/logo.png",
+          "@type": "ImageObject"
+        },
+        "@type": "Organization"
+      },
+      "reviewRating": {
+        "ratingValue": "1",
+        "bestRating": "5",
+        "worstRating": "1",
+        "alternateName": "False",
+        "@type": "Rating"
+      }
+    },
+    {
+      "@type": "ClaimReview",
+      "datePublished": "2022-02-23 16:15",
+      "url": "https://factuel.afp.com/doc.afp.com.323Q7N9",
+      "name": "Manipulated videos, recycled photos: renewed disinformation about the Russian-Ukrainian conflict",
+      "@context": "https://schema.org",
+      "claimReviewed": "BBC warning of imminent nuclear war in Eastern Europe",
+      "itemReviewed": {
+        "@type": "Claim",
+        "author": {
+          "name": "Unknown",
+          "@type": "Person"
+        },
+        "datePublished": "2022-01-20",
+        "appearance": [
+          "https://www.facebook.com/104681915311714/videos/686860666025235/?_rdc=1&_rdr",
+          "https://www.facebook.com/toscoentertianment/videos/1307046023053075/?_rdc=1&_rdr"
+        ]
+      },
+      "author": {
+        "name": "AFP",
+        "url": "https://factcheck.afp.com/",
+        "sameAs": "https://twitter.com/AFPFactCheck",
+        "logo": {
+          "url": "https://www.afp.com/sites/all/themes/custom/afpcom/logo.png",
+          "@type": "ImageObject"
+        },
+        "@type": "Organization"
+      },
+      "reviewRating": {
+        "ratingValue": "1",
+        "bestRating": "5",
+        "worstRating": "1",
+        "alternateName": "False",
+        "@type": "Rating"
+      }
+    }
+  ]
+}

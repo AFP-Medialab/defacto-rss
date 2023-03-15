@@ -1,131 +1,72 @@
 {
-    "@context": "https://schema.org",
-    "@type": "ClaimReview",
-    "claimReviewed": "Video shows Russian soldiers landing in Ukraine in 2022",
-    "name": "Old video of Russian paratroopers jumping from plane shared with false claim about 'invasion of Ukraine'",
-    "datePublished": "2022-03-25 10:10",
-    "url": "https://factcheck.afp.com/doc.afp.com.326A3U7",
-    "associatedMediaReview":{
-        "@type": "MediaReview",
-        "datePublished": "2022-03-25 10:10",
-        "url": "https://factcheck.afp.com/doc.afp.com.326A3U7",
-        "author":
+  "@context": "https://schema.org",
+  "@type": "ClaimReview",
+  "name": "No, Vladimir Putin did not ignore Emmanuel Macron's handshake.",
+  "datePublished": "2022-02-08 12:59",
+  "url": "https://factuel.afp.com/doc.afp.com.9YM7U4",
+  "claimReviewed": "Vladimir Putin ignored Emmanuel Macron's handshake.",
+  "associatedMediaReview": {
+    "@type": "MediaReview",
+    "datePublished": "2021-09-02",
+    "url": "https://factuel.afp.com/doc.afp.com.9YM7U4",
+    "author": {
+      "@type": "Organization",
+      "name": "AFP",
+      "url": "https://factcheck.afp.com/",
+      "sameAs": "https://twitter.com/AFPFactCheck"
+    },
+    "mediaAuthenticityCategory": "EditedOrCroppedContent",
+    "originalMediaContextDescription": "Centenary of the 1918 Armistice: Vladimir Putin arrives at the Arc de Triomphe",
+    "originalMediaLink": "https://youtu.be/HPZoY7u20BY",
+    "itemReviewed": {
+      "@type": "MediaReviewItem",
+      "mediaItemAppearance": [
         {
-            "@type": "Organization",
-            "name": "AFP",
-            "url": "https://factcheck.afp.com/",
-            "sameAs": "https://twitter.com/AFPFactCheck"
+          "@type": "VideoObject",
+          "url": "https://www.facebook.com/100063486369524/videos/2008381422654312",
+          "archivedAt": "https://perma.cc/B4TG-EFFE",
+          "creator": {
+            "@type": "Person",
+            "name": "Lokal Antillais"
+          }
         },
-        "mediaAuthenticityCategory": "DecontextualizedContent",
-        "originalMediaLink": "https://vk.com/video27765997_168151788",
-        "originalMediaContextDescription": "Our landing near Rostov",
-        "itemReviewed":
         {
-            "@type": "MediaReviewItem",
-            "mediaItemAppearance":
-            [
-                {
-                    "@type": "VideoObject",
-                    "url": "https://www.facebook.com/js.jlm/videos/2740805052880942/",
-                    "archivedAt": "https://perma.cc/X3EJ-URGT"
-                },
-                {
-                    "@type": "VideoObject",
-                    "url": "https://www.facebook.com/asyikfm/posts/473881661057647/",
-                    "archivedAt": "https://perma.cc/5GBE-JDD8"
-                },
-                {
-                    "@type": "VideoObject",
-                    "url": "https://www.facebook.com/100068671489428/videos/969461563961719/",
-                    "archivedAt": "https://perma.cc/FAM8-JC5E"
-                },
-                {
-                    "@type": "VideoObject",
-                    "url": "https://www.facebook.com/100068671489428/videos/969461563961719/",
-                    "archivedAt": "https://perma.cc/FAM8-JC5E"
-                },
-                {
-                    "@type": "VideoObject",
-                    "url": "https://www.instagram.com/p/CaWnhgCg2XC/",
-                    "archivedAt": "https://perma.cc/YN53-4L8E"
-                },
-                {
-                    "@type": "VideoObject",
-                    "url": "https://www.instagram.com/p/CaWyZ0TjuLF",
-                    "archivedAt": "https://perma.cc/LQ63-985R"
-                },
-                {
-                    "@type": "VideoObject",
-                    "url": "https://www.tiktok.com/@murtazaviews/video/7068279531685121285",
-                    "archivedAt": "https://archive.ph/lknsy"
-                },
-                {
-                    "@type": "VideoObject",
-                    "url": "https://www.youtube.com/watch?v=otRCpnM3f_w",
-                    "archivedAt": "https://perma.cc/E332-4DAJ"
-                },
-                {
-                    "@type": "VideoObject",
-                    "url": "https://www.facebook.com/fysall.alex/videos/2117079891800982/",
-                    "archivedAt": "https://perma.cc/YLM4-4WNS"
-                },
-                {
-                    "@type": "VideoObject",
-                    "associatedArticle":{
-                        "@type" : "NewsArticle",
-                        "url":"https://www.nbox.bg/2022/02/руски-парашутисти-се-спускат-от-небет/",
-                        "archivedAt": "https://perma.cc/XF2Z-D378"
-                    }
-                },
-                {
-                    "@type": "VideoObject",
-                    "url": "https://www.facebook.com/DIJLAHtv/videos/1023761468352139/",
-                    "archivedAt": "https://archive.ph/umc3U"
-                },
-                {
-                    "@type": "VideoObject",
-                    "url": "https://www.instagram.com/p/CaWuaF2j3IU/",
-                    "archivedAt": "https://archive.ph/5D8e0"
-                },
-                {
-                    "@type": "VideoObject",
-                    "url": "https://twitter.com/ahnewspace/status/1496759240790265864?s=21",
-                    "archivedAt": "https://perma.cc/Q4X8-D8DD"
-                },
-                {
-                    "@type": "VideoObject",
-                    "url": "https://www.facebook.com/watch/?v=1136943563801401",
-                    "archivedAt": "https://perma.cc/F6A4-QUZV"
-                },
-                {
-                    "@type": "VideoObject",
-                    "url": "https://www.facebook.com/watch/?v=3065944256955466",
-                    "archivedAt": "https://perma.cc/B2Q5-XANM"
-                }
-            ]
-        }
-    },
-    "author":
-    {
-        "@type": "Organization",
-        "@id": "https://factcheck.afp.com/",
-        "name": "AFP",
-        "url": "https://factcheck.afp.com/",
-        "sameAs": "https://twitter.com/AFPFactCheck",
-        "logo":
+          "@type": "VideoObject",
+          "url": "https://twitter.com/baa3465dd891455/status/1486057108307066880",
+          "archivedAt": "https://perma.cc/NR8G-FHXU",
+          "creator": {
+            "@type": "Person",
+            "name": "Lait bel",
+            "url": "https://twitter.com/baa3465dd891455"
+          }
+        },
         {
-            "@type": "ImageObject",
-            "url": "https://factuel.afp.com/sites/all/themes/custom/afpblog/v2/assets/img/Logo_AFP.svg",
-            "width": "",
-            "height": ""
+          "@type": "VideoObject",
+          "url": "https://www.facebook.com/watch/?v=985014695406486",
+          "creator": {
+            "@type": "Person",
+            "name": " Mali. 24 TV"
+          }
         }
-    },
-    "reviewRating":
-    {
-        "@type": "Rating",
-        "ratingValue": "1",
-        "bestRating": "5",
-        "worstRating": "1",
-        "alternateName": "False"
+      ]
     }
+  },
+  "author": {
+    "@type": "Organization",
+    "@id": "https://factcheck.afp.com/",
+    "name": "AFP",
+    "url": "https://factcheck.afp.com/",
+    "sameAs": "https://twitter.com/AFPFactCheck",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://factuel.afp.com/sites/all/themes/custom/afpblog/v2/assets/img/Logo_AFP.svg"
+    }
+  },
+  "reviewRating": {
+    "@type": "Rating",
+    "ratingValue": "1",
+    "bestRating": "5",
+    "worstRating": "1",
+    "alternateName": "Truncated and misleading video"
+  }
 }

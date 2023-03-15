@@ -1,0 +1,53 @@
+{
+  "@context": "https://schema.org",
+  "@type": "ClaimReview",
+  "claimReviewed": "Video shows Russian soldiers landing in Ukraine in 2022",
+  "name": "Old video of Russian paratroopers jumping from plane shared with false claim about 'invasion of Ukraine'",
+  "datePublished": "2022-03-25 10:10",
+  "url": "https://factcheck.afp.com/doc.afp.com.326A3U7",
+  "itemReviewed": {
+    "@type": "Claim",
+    "datePublished": "2022-02-24",
+    "appearance": [
+      "https://www.facebook.com/js.jlm/videos/2740805052880942/",
+      "https://www.facebook.com/asyikfm/posts/473881661057647/",
+      "https://www.facebook.com/100068671489428/videos/969461563961719/",
+      "https://www.facebook.com/100068671489428/videos/969461563961719/",
+      "https://www.instagram.com/p/CaWnhgCg2XC/",
+      "https://www.instagram.com/p/CaWyZ0TjuLF",
+      "https://www.tiktok.com/@murtazaviews/video/7068279531685121285",
+      "https://www.youtube.com/watch?v=otRCpnM3f_w",
+      "https://www.facebook.com/fysall.alex/videos/2117079891800982/",
+      "https://www.nbox.bg/2022/02/руски-парашутисти-се-спускат-от-небет/",
+      "https://www.facebook.com/DIJLAHtv/videos/1023761468352139/",
+      "https://www.instagram.com/p/CaWuaF2j3IU/",
+      "https://twitter.com/ahnewspace/status/1496759240790265864?s=21",
+      "https://www.facebook.com/watch/?v=1136943563801401",
+      "https://www.facebook.com/watch/?v=3065944256955466"
+    ],
+    "author": {
+      "@type": "Person",
+      "name": "Multiple sources"
+    }
+  },
+  "author": {
+    "@type": "Organization",
+    "@id": "https://factcheck.afp.com/",
+    "name": "AFP",
+    "url": "https://factcheck.afp.com/",
+    "sameAs": "https://twitter.com/AFPFactCheck",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://factuel.afp.com/sites/all/themes/custom/afpblog/v2/assets/img/Logo_AFP.svg",
+      "width": "",
+      "height": ""
+    }
+  },
+  "reviewRating": {
+    "@type": "Rating",
+    "ratingValue": "1",
+    "bestRating": "5",
+    "worstRating": "1",
+    "alternateName": "False"
+  }
+}

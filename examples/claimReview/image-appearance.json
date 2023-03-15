@@ -1,23 +1,22 @@
 {
-    "appearance":
-      [
-          {
-              "@type": "ImageObject",
-              "url": "https://twitter.com/LoupnoirAlpha/status/1493483404276420612/photo/1",
-              "archivedAt": "https://archive.is/pZn8v",
-              "creator": {
-                  "@type": "Person",
-                  "name": "BlackwolfAlpha"
-              }
-          },
-          {
-              "@type": "ImageObject",
-              "url": "https://www.facebook.com/151335048220780/posts/2139858189368446/",
-              "archivedAt": "https://archive.is/anga1",
-              "creator": {
-                  "@type": "Person",
-                  "name": "MediaLiars"
-              }
-          }	 
-      ]
+  "appearance": [
+    {
+      "@type": "ImageObject",
+      "url": "https://twitter.com/LoupnoirAlpha/status/1493483404276420612/photo/1",
+      "archivedAt": "https://archive.is/pZn8v",
+      "creator": {
+        "@type": "Person",
+        "name": "BlackwolfAlpha"
+      }
+    },
+    {
+      "@type": "ImageObject",
+      "url": "https://www.facebook.com/151335048220780/posts/2139858189368446/",
+      "archivedAt": "https://archive.is/anga1",
+      "creator": {
+        "@type": "Person",
+        "name": "MediaLiars"
+      }
+    }
+  ]
 }

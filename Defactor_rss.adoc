@@ -50,3 +50,25 @@ It is therefore more of an objective to be achieved within the framework of the 
 include::sections/rss_elements.adoc[]
 
 include::sections/schema_review.adoc[]
+
+include::sections/use_cases.adoc[]
+
+== Conclusion
+
+This document provides an on-going state-of-the art and recommendation to use ClaimReview and MediaReview within Fact-checking RSS feeds in order to facilitate automation of content ingestion within the De Facto project, that can be useful also for EDMO regional and national hubs platforms. 
+Richer in metadata the content will be, easier it will be to build disinformation databases for Social Sciences afterwards. The enrichment in metadata can also take place on each disinformation observatory platform. In this respect, we welcome feedback on this document to continue the discussion on this topic and to improve this document. Feel free to connect with medialab@afp.com for this purpose.
+
+== References
+
+* RSS feeds for Instant Articles : https://developers.facebook.com/docs/instant-articles/publishing/setup-rss-feed/
+* Technical feed requirements: https://support.google.com/news/publisher-center/answer/9545420?hl=en 
+* Google Fact-checking definition: https://developers.google.com/search/docs/advanced/structured-data/factcheck?hl=en
+* New Source of ClaimReview Markup for Data Commons Feed : https://www.datacommons.org/factcheck/
+* Enriching ClaimReview for fact checkers : http://blog.schema.org/2021/12/enriching-claim-reviews-sharing.html 
+* Claim Review validator: https://search.google.com/test/rich-results
+* Media Topic AFP : https://www.afp.com/fr/documentation-sur-les-thematiques
+* RSS best practices : https://www.rssboard.org/rss-profile 
+* Categorized visual misinformation : https://www.niemanlab.org/2020/01/is-this-video-missing-context-transformed-or-edited-this-effort-wants-to-standardize-how-we-categorize-visual-misinformation/ 
+* Translating the video and visual fact-check terminology to Schema.org structured data : https://docs.google.com/document/d/1jRbX2IesVQrWvKpehb8ntSMKe0D88bZp3nK8ZAjq6E4/edit 
+* Claim review project:  https://www.claimreviewproject.com/mediareview/an-open-process 
+* Duke Reporters Lab Tech & Check news: https://reporterslab.org/tech-and-check/

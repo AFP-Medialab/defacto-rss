@@ -1,0 +1,90 @@
+:sectnums:
+:sectnumlevels: 4
+:sourcedir: ../examples/claimReview
+
+== Use cases
+The use of ClaimReview and MediaReview applies to the following use cases:
+
+. A declaration published on a single link.
+. A statement published in several places.
+. Several statements.
+. A statement with a media review.
+
+All examples are accessible on the GitHub project:  https://github.com/AFP-Medialab/defacto-rss/tree/main/examples
+
+=== Case 1: A single statement published on a single link
+
+[cols="1,1]
+|===
+| ClaimReview | appearance
+
+| Video shows Russian soldiers landing in Ukraine in 2022 | https://www.facebook.com/kashmirnews1658/videos/728945791437637/ 
+|===
+
+.Example 1 - ClaimReview from a URL
+[source,json]
+include::{sourcedir}/simple-en.json[]
+
+.Example 2 - ClaimReview from a VideoObject
+[source,json]
+include::{sourcedir}/videoobject-en.json[]
+
+=== Case 2: Fact-check on a declaration published in several places
+Several links to documents for the same claim: the same declaration was taken up in several places.
+
+[cols="1,2"]
+|===
+| ClaimReview | appearance
+
+.2+| EU riot police on the Champs-Elysées
+ | https://twitter.com/LoupnoirAlpha/status/1493483404276420612/photo/1 
+ | https://www.facebook.com/151335048220780/posts/2139858189368446/
+|===
+
+.Example 1 - Claim Review simple multi appearances
+[source,json]
+include::{sourcedir}/multi-appearance-url-en.json[]
+
+.Example 2 - ClaimReview with CreativeWork multi appearance and archived pages 
+[source,json]
+include::{sourcedir}/multi-appearance-archive-en.json[]
+
+=== Case 3: Multiple claim reviews for one thematic Fact-Checking wrap-up
+A thematic wrap-up may include multiple claims. +
+Multiple claimReviews for a same thematic FactCheck wrap-up article are possible but be aware that the whole article will not be eligible for the single fact check rich result on Google search. Nevertheless, it may be useful to keep those multiple ClaimReviews into your CMS and to build databases.
+
+|===
+| Theme | Source
+
+| Manipulated videos, recycled photos: renewed disinformation about the Russian-Ukrainian conflict | https://factuel.afp.com/doc.afp.com.323Q7N9
+|===
+
+[cols='2,1']
+|===
+|ClaimReview |appearance
+
+| a girl on a bus in Ukraine (...) waiting for Russian soldiers | https://twitter.com/terror_alarm/status/1492596807544750082/photo/1
+| Ukrainian troops preparing for potential combat | https://weibo.com/1650926392/LbMiODUqI?refer_flag=1001030103_ 
+.2+| BBC warning of imminent nuclear war in Eastern Europe | https://www.facebook.com/104681915311714/videos/686860666025235/?_rdc=1&_rdr 
+| https://www.facebook.com/toscoentertianment/videos/1307046023053075/?_rdc=1&_rdr 
+|===
+
+.Example - Multiple claim reviews
+[source,json]
+include::{sourcedir}/multi-claimreview-en.json[]
+
+=== Case 4: A ClaimReview with media review
+The example below shows the use of a MediaReview item in a ClaimReview. +
+The *_associatedMediaReview_* property replaces the *_itemReview_* property in the ClaimReview.
+
+|===
+| ClaimReview | MediaReview: *_EditedOrCroppedContent_*
+
+.3+| Vladimir Putin ignored Emmanuel Macron's handshake. | https://www.facebook.com/100063486369524/videos/2008381422654312 | https://twitter.com/baa3465dd891455/status/1486057108307066880 | https://www.facebook.com/watch/?v=985014695406486
+|===
+
+.Example - AssociateMediaReview
+[source,json]
+include::{sourcedir}/claimreview-with-mediareview-en.json[]
+
+
