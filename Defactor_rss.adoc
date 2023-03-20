@@ -1,6 +1,8 @@
 
 = A Guide to a RSS pivot format, including ClaimReview and MediaReview: For Fact Checks Feed Providers
 :doctype: book
+:license-url: http://creativecommons.org/licenses/by-sa/4.0/
+:license-title: CC BY-SA 4.0
 //:notitle:
 :toc: macro
 :toc-title: Content
