@@ -1,9 +1,9 @@
 :sourcedir: ../../examples
 === Content RSS - content:encoded
-Content extract of the factcheck article is using encoded element defined by RDF module Content : https://web.resource.org/rss/1.0/modules/content/ .
+Element use for the content of the factcheck article. It is defined by RDF module Content : https://web.resource.org/rss/1.0/modules/content/ .
 Element is prefixed with *content*
 
-The use of encoded defined by Content module allows to set any entity-encoded or CDATA-escaped version of the content of the item. 
+The use of *content:encoded* element allows to set any entity-encoded or CDATA-escaped version of the content of the item. 
 
 .Exemple content:encoded with HTML
 [source,html]
