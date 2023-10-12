@@ -1,6 +1,6 @@
 :sourcedir: ../../examples
 === Content RSS - content:encoded
-Element use for the content of the factcheck article. It is defined by RDF module Content : https://web.resource.org/rss/1.0/modules/content/ .
+Element uses for the content of the factcheck article. It is defined by RDF module Content : https://web.resource.org/rss/1.0/modules/content/ .
 Element is prefixed with *content*
 
 The use of *content:encoded* element allows to set any entity-encoded or CDATA-escaped version of the content of the item. 
@@ -10,13 +10,13 @@ The use of *content:encoded* element allows to set any entity-encoded or CDATA-e
 include::{sourcedir}/content/content-encoded.htm[]
 
 ==== HTML media html structure
-Content that embeded media content such images and video use the HTML5 element *figure* included inside a *div* element with a NewsMLG2 class attributes.
+Content that embeded media contents such images and videos uses HTML5 element *figure* included inside a *div* element with a NewsMLG2 class attribute.
 
 [cols="1h,5"]
 |===
 2+|class attribute for media
-|g2image| use for any image content (gif, jpg, png, etc)
-|g2video | use for any video content (mp4, ogg, etc)
+|g2image footnote:[AFP NewsMLG2 guide defines g2picture instead. cf https://www.afp.com/communication/iris/Guide_to_AFP_NewsML-G2.html#heading_toc_j_62]| any image content (gif, jpg, png, etc)
+|g2video | any video content (mp4, ogg, etc)
 |===
 
 Figure struture for media content
