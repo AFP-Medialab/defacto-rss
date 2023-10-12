@@ -1,0 +1,101 @@
+:sourcedir: ../../examples
+=== Content RSS - content:encoded
+Content extract of the factcheck article is using encoded element defined by RDF module Content : https://web.resource.org/rss/1.0/modules/content/ .
+Element is prefixed with *content*
+
+The use of encoded defined by Content module allows to set any entity-encoded or CDATA-escaped version of the content of the item. 
+
+.Exemple content:encoded with HTML
+[source,html]
+include::{sourcedir}/content/content-encoded.htm[]
+
+==== HTML media html structure
+Content that embeded media content such images and video use the HTML5 element *figure* included inside a *div* element with a NewsMLG2 class attributes.
+
+[cols="1h,5"]
+|===
+2+|class attribute for media
+|g2image| use for any image content (gif, jpg, png, etc)
+|g2video | use for any video content (mp4, ogg, etc)
+|===
+
+Figure struture for media content
+[cols="1h,5a"]
+|===
+2+| Attributes
+| itemscope| Defines the scope of associated metadata. No value.
+| itemtype|  
+Possilbe values:
+
+*  *https://schema.org/ImageObject* 
+*  *https://schema.org/VideoObject*
+|===
+
+[cols="1h,5a"]
+|===
+2+| Elements
+| img \| video| Media type
+| figcaption | Use for caption or legend. It contains media description and credit information. Content data are set with span element with the following itemprop:
+
+* *caption* => For media description
+* *credit* => For media creedit with *author* or/and *provider*
+|===
+
+.Example Image with description & credit
+[source,html]
+include::{sourcedir}/content/image-content.htm[]
+
+.Example Animated Video with description & credit
+[source,html]
+include::{sourcedir}/content/video-content.htm[]
+
+===== Animated video as Animated Gif
+Animated video are short videos that act as animated Gif. In order to behave as such, *video* HTML element should use the following attributes:
+
+* autoplay
+* loop
+
+[source,html]
+<video autoplay loop>
+...
+</video>
+
+===== Credit css style separator
+Several author and provider elements can be set in the credit. In order to display them with a separator, following CSS style can be apply by default:
+[source,css]
+figcaption>div[itemprop="credit"]>span:after {
+    content: "/ ";
+}
+figcaption>div[itemprop="credit"]>span:last-child:after {
+    content: "";
+}
+
+==== HTML Media Warning metadata
+Warning metadata is used to qualify if the content of a media may be perceived as being offensive.
+Warning Metatdata are using IPTC's contentwarning definition (https://cv.iptc.org/newscodes/contentwarning).
+Some of the most commun terms use below.
+[cols="1h,5"]
+|===
+2+| Values https://cv.iptc.org/newscodes/contentwarning
+| death|Could be perceived as offensive due to the discussion or display of death
+| language|Could be perceived as offensive due to the language used
+| nudity|Could be perceived as offensive due to nudity
+| sexuality | Could be perceived as offensive due to the discussion or display of sexuality
+| suffering | Could be perceived as distressing due to the discussion or display of suffering or triggering topics, including suicide, eating disorders or self harm
+| violence | Could be perceived as offensive due to the discussion or display of violence
+|===
+
+ContentWarning are used with microdata format using the following pattern:
+[source,html]
+<span itemscope itemtype="https://cv.iptc.org/newscodes">
+    <meta itemprop="contentwarning" content="{}" >
+    <meta itemprop="contentwarning" content="{}">
+    ...
+</span>
+
+
+.Example contentWarning on image
+[source,html]
+include::{sourcedir}/content/image-content-warnings.htm[]
+
+

@@ -1,8 +1,11 @@
 <media:group>
-    <media:content fileSize="4696063" height="3333" type="image/jpeg" url="https://hosting.afp.com/factcheck-rss/FR/medias/dea3220d9b4815e97477c8fa42ea0f9af93196ea-highRes.jpg" width= "5000">
+    <media:content fileSize="4696063" height="3333" type="image/jpeg" url="medias/dea3220d9b4815e97477c8fa42ea0f9af93196ea-highRes.jpg" width= "5000" medium="image">
    	 <media:credit>AFP</media:credit>
     </media:content>
-    <media:content fileSize="234803" height="166" type="image/jpeg" url="https://hosting.afp.com/factcheck-rss/FR/medias/dea3220d9b4815e97477c8fa42ea0f9af93196ea-lowRes.jpg" width= "250">
+    <media:content fileSize="234803" height="166" type="image/jpeg" url="medias/dea3220d9b4815e97477c8fa42ea0f9af93196ea-lowRes.jpg" width= "250" medium="image">
    	 <media:credit>AFP</media:credit>
+    </media:content>
+    <media:content url="medias32MT6DP_3-640x360.mp4" medium="video" type="video/mp4">
+      <media:credit>John Doe / afptv</media:credit>
     </media:content>
 </media:group>

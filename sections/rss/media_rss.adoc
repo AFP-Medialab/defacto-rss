@@ -13,6 +13,7 @@ Attributes and child elements of *media:content*.
 | height | Height display size of the content.
 | width | Width display size of the content.
 | type | Media mime type.
+| medium | Type of media object (image \| audio \| video \| document \| executable).  It simplifies decision making on the reader side and avoid ambiguities between Mine Type. 
 |===
 
 [cols="2h,5a"]
