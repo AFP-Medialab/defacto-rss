@@ -91,7 +91,7 @@ https://schema.org/CreativeWork#subtypes
 
 | url | {type_url} | Link to the content of the claim, usually the web page where the claim is contained.
 
-| abstract | {type_text} | Description of the CreativeWork.
+| abstract | {type_text} | Brief description of the CreativeWork.
 
 | archivedAt | {type_url} | Link to an archive provider where the link defined in *_url_*  is archived.
 
