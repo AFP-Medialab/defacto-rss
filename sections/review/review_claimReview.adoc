@@ -88,11 +88,33 @@ WARNING: the CreativeWork type is a generic type. It is advisable to use https:/
 | @type | {type_creative_work} | Sets the creativeWork type of the itemReview.
 The general value is CreativeWork which is suitable for all content. It is advisable to specialize the contents by using the subtypes of CreativeWork and to use the properties specific to the subtype used.
 https://schema.org/CreativeWork#subtypes
+
 | url | {type_url} | Link to the content of the claim, usually the web page where the claim is contained.
+
+| abstract | {type_text} | Description of the CreativeWork.
+
 | archivedAt | {type_url} | Link to an archive provider where the link defined in *_url_*  is archived.
-| creator | {type_organization}, {type_person} | Creator of the content of this CreativeWork. Not to be confused with the author of the statement.
-| name | {type_text} | Name of the object.
-| abstract | {type_text} | Description of the object.
+
+| countryOfOrigin | {type_text} | Country code indicating from where the CreativeWork was published and/or created.
+
+| creator | {type_organization}, {type_person} | Creator of the content of the CreativeWork. Not to be confused with the author of the statement.
+
+| dateModified | {type_date_time} | Date and time when the CreativeWork was modified.
+
+| datePublished | {type_date_time} | Date and time when the CreativeWork was published.
+
+| headline | {type_text} | Title of the CreativeWork.
+
+| interactionStatistic |  link:https://schema.org/InteractionCounter[InteractionCounter] | Metrics representing how Internet users interact with the CreativeWork online.
+
+| isPartOf | link:https://schema.org/isPartOf[Property] | The domain that hosts the link defined in *_url_*, known as the URL's domain name. The domain name is stored in the property *_name_* of *_isPartOf_*, while *_@type_* of *_isPartOf_* is always 'WebSite'.
+
+| keywords | {type_text} | Keywords associated with the CreativeWork.
+
+| name | {type_text} | Name of the CreativeWork.
+
+| text | {type_text} | Full text content of the CreativeWork. Not to be confused with an abstract or brief description of the CreativeWork.
+
 |===
 
 If the URL of the claim refers to a media (photo, video or audio), the type used should be MediaObject. In addition to the above properties, MediaObject properties can be added as a complement. 
