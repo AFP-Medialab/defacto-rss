@@ -5,6 +5,7 @@
 The description of the recommended RSS pivot format reuses the standards defined by the RSS 2.0 format as well as the existing extensions.
 The full RSS format specification can be accessed at https://www.rssboard.org/rss-2-0-1.
 
+
 === RSS feeds
 [cols="1h,5"]
 |===
@@ -21,6 +22,8 @@ The full RSS format specification can be accessed at https://www.rssboard.org/rs
 | title | Title of the RSS feed
 | link | Link of the RSS feed or homepage of the site
 | language | Language of the RSS feed
+| at:delete-entry | Element used for an item that has been
+   removed or should not be used (kill). Namespace declation should be added in the rss content xmlns:at="http://purl.org/atompub/tombstones/1.0"
 | item | An *item* for each publication of a verification article (fact-check).
 https://www.rssboard.org/rss-profile#element-channel-item
 |===
