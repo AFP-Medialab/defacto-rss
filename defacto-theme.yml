@@ -1,0 +1,9 @@
+extends: default
+title-page:
+  title:
+    font-color: #FFFFFF
+  subtitle:
+    font-color: #999999
+code:
+  font-family:  Times-Roman
+  

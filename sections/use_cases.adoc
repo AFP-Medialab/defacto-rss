@@ -87,4 +87,16 @@ The *_associatedMediaReview_* property replaces the *_itemReview_* property in t
 [source,json]
 include::{sourcedir}/claimreview-with-mediareview-en.json[]
 
+=== Case 5: A ClaimReview from social media with interaction statistics
+
+|===
+| ClaimReview | appearance: *SocialPostMedia*
+
+.2+|Le GIEC écrit que la mer va monter de 15 mères. Elle monte de combien la mer ? Le GIEC le dit : de deux millimères par an. [ ...] Au bout de cinquante ans, vous aurez 10 centimères. | https://www.youtube.com/watch?v=HkuCBxIbZ_g
+|===
+
+Example below show a claim from a Youtube video. It shows claim social interactions (like, comments, shares, etc ) on different platforms.
+.Example - InteractionStatistics
+[source,json]
+include::{sourcedir}/mutli-interactionStatistic.json[]
 

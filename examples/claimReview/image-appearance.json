@@ -16,7 +16,19 @@
       "creator": {
         "@type": "Person",
         "name": "MediaLiars"
-      }
+      },
+      "interactionStatistic" : [
+        {
+          "@type": "InteractionCounter",
+          "interactionType": "https://schema.org/ShareAction",
+          "userInteractionCount": 20
+        },
+        {
+          "@type": "InteractionCounter",
+          "interactionType": "https://schema.org/CommentAction",
+          "userInteractionCount": 3
+        }
+      ]
     }
   ]
 }

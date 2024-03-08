@@ -15,7 +15,8 @@ Content that embeded media contents such images and videos uses HTML5 element *f
 [cols="1h,5"]
 |===
 2+|class attribute for media
-|g2image footnote:[AFP NewsMLG2 guide defines g2picture instead. cf https://www.afp.com/communication/iris/Guide_to_AFP_NewsML-G2.html#heading_toc_j_62]| any image content (gif, jpg, png, etc)
+|g2picture footnote:[AFP NewsMLG2 guide defines g2picture. g2image can be aloso used by is deprecated
+ cf https://www.afp.com/communication/iris/Guide_to_AFP_NewsML-G2.html#heading_toc_j_62]| any image content (gif, jpg, png, etc)
 |g2video | any video content (mp4, ogg, etc)
 |===
 
@@ -35,10 +36,10 @@ Possilbe values:
 |===
 2+| Elements
 | img \| video| Media type
-| figcaption | Use for caption or legend. It contains media description and credit information. Content data are set with span element with the following itemprop:
+| figcaption | Use for caption or legend. It contains media description and credit information. Content data are set with span or div element with the following itemprop:
 
 * *caption* => For media description
-* *credit* => For media creedit with *author* or/and *provider*
+* *credit* => For media credit with *author* or/and *provider*
 |===
 
 .Example Image with description & credit
@@ -54,9 +55,10 @@ Animated video are short videos that act as animated Gif. In order to behave as 
 
 * autoplay
 * loop
+* muted
 
 [source,html]
-<video autoplay loop>
+<video autoplay loop muted>
 ...
 </video>
 

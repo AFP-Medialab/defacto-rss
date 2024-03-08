@@ -1,0 +1,194 @@
+{
+  "@context": [
+    "https://schema.org",
+    { "defacto": "https://defacto-observatoire.fr/defacto-rss" }
+  ],
+  "@graph": [
+    {
+      "id": "Medias/20-Minutes/Fact-checks/Rechauffement-climatique-Temperatures-en-baisse-hausse-du-niveau-de-la-mer-On-a-verifie-une-interview-virale",
+      "title": "Réchauffement climatique : Températures en baisse, hausse du niveau de la mer ... On a vérifié une interview virale",
+      "url": "https://defacto-observatoire.fr/Medias/20-Minutes/Fact-checks/Rechauffement-climatique-Temperatures-en-baisse-hausse-du-niveau-de-la-mer-On-a-verifie-une-interview-virale/",
+      "provider": {
+        "id": "Medias/20-Minutes",
+        "name": "Fake off - 20 Minutes",
+        "url": "https://www.20minutes.fr/societe/desintox/"
+      },
+      "leadParagraph": "<div><p>Dans une vidéo intitulée 'GIEC, 30 ans de mensonges', Christian Gerondeau affirme que les températures baissent depuis 2015 et questionne l'impact de la France dans les émissions de gaz à effet de serre. Des affirmations à recontextualiser</p></div>",
+      "datePublished": "2023-06-15T14:25:57+0000",
+      "authors": "Mathilde Cousin et Emilie Jehanno (20 Minutes)",
+      "topics": ["Environnement"],
+      "keywords": [
+        "Réchauffement climatique",
+        "France",
+        "giec",
+        "Environnement"
+      ],
+      "image": [
+        {
+          "url": "https://defacto-observatoire.fr/download/Medias/20-Minutes/Fact-checks/Rechauffement-climatique-Temperatures-en-baisse-hausse-du-niveau-de-la-mer-On-a-verifie-une-interview-virale/WebHome/1200x768_sur-la-loire-entre-saumur-et-angers-des-banc-de-sable-apparaissent-alors-qu-ils-devraient-etre-immerges-les-berges-devaient-etre-sous-5-metre-d-eau-mais-le-manque-de-pluie-et-les-nappes-phrea?rev=1.1"
+        }
+      ],
+      "claimReviews": [
+        {
+          "itemReviewed": {
+            "author": {
+              "name": "Christian Gerondeau",
+              "url": "",
+              "sameAs": null,
+              "logo": null,
+              "@type": "Person"
+            },
+            "datePublished": "2023-06-09T22:00:00+0000",
+            "appearance": {
+              "url": "https://www.youtube.com/watch?v=HkuCBxIbZ_g",
+              "name": "",
+              "@type": "SocialMediaPosting",
+              "isPartOf": {
+                "@type": "WebSite",
+                "name": "youtube.com"
+              },
+              "identifier": "HkuCBxIbZ_g",
+              "datePublished": "2023-06-02T10:30:04Z",
+              "headline": "GIEC : 30 ans de mensonges - Le Zoom - Christian Gerondeau - TVL",
+              "keywords": [
+                "alternative TVL TVlibertés TV Information Réinformation Ré-information",
+                "Élise Blaise",
+                "Martial Bild",
+                "Pierre Bergerault",
+                "Économie Politique Société",
+                "Le journal",
+                "Journal TV",
+                "Pierre Jovanovic",
+                "Charles Gave",
+                "Olivier Delamarche",
+                "Anne Brassié",
+                "Covid-19 Ukraine Russie",
+                "Média indépendant",
+                "Christian Perronne",
+                "Gilets Jaunes"
+              ],
+              "duration": "PT27M35S",
+              "abstract": "Pour vous procurer \"Le climat par les chiffres\" : https://bit.ly/3IQ69v5\n---[...]",
+              "creator": {
+                "@type": "WebPage",
+                "defacto:dateCreated": "2018-09-24T09:27:16Z",
+                "defacto:locationCreated": "FR",
+                "identifier": "HkuCBxIbZ_g",
+                "name": "Chaîne officielle TVL",
+                "interactionStatistic": [
+                  {
+                    "@type": "InteractionCounter",
+                    "interactionType": "SubscribeAction",
+                    "interactionService": {
+                      "@type": "WebSite",
+                      "name": "YouTube"
+                    },
+                    "userInteractionCount": 739000
+                  },
+                  {
+                    "@type": "InteractionCounter",
+                    "interactionType": "CreateAction",
+                    "interactionService": {
+                      "@type": "WebSite",
+                      "name": "YouTube"
+                    },
+                    "userInteractionCount": 3731,
+                    "result": {
+                      "@type": "VideoObject"
+                    }
+                  }
+                ]
+              },
+              "interactionStatistic": [
+                {
+                  "@type": "InteractionCounter",
+                  "interactionType": "CommentAction",
+                  "interactionService": {
+                    "@type": "WebSite",
+                    "name": "Facebook"
+                  },
+                  "userInteractionCount": "1444"
+                },
+                {
+                  "@type": "InteractionCounter",
+                  "interactionType": "ShareAction",
+                  "interactionService": {
+                    "@type": "WebSite",
+                    "name": "Facebook"
+                  },
+                  "userInteractionCount": "7199"
+                },
+                {
+                  "@type": "InteractionCounter",
+                  "interactionType": "ShareAction",
+                  "interactionService": {
+                    "@type": "WebSite",
+                    "name": "Pinterest"
+                  },
+                  "userInteractionCount": "0"
+                },
+                {
+                  "@type": "InteractionCounter",
+                  "interactionType": "ShareAction",
+                  "interactionService": {
+                    "@type": "WebSite",
+                    "name": "Twitter"
+                  },
+                  "userInteractionCount": "3661"
+                },
+                {
+                  "@type": "InteractionCounter",
+                  "interactionType": "defacto:EngagementAction",
+                  "interactionService": {
+                    "@type": "WebSite",
+                    "name": "Reddit"
+                  },
+                  "userInteractionCount": "0"
+                },
+                {
+                  "@type": "InteractionCounter",
+                  "interactionType": "WatchAction",
+                  "interactionService": {
+                    "@type": "WebSite",
+                    "name": "YouTube"
+                  },
+                  "userInteractionCount": "350173"
+                },
+                {
+                  "@type": "InteractionCounter",
+                  "interactionType": "CommentAction",
+                  "interactionService": {
+                    "@type": "WebSite",
+                    "name": "YouTube"
+                  },
+                  "userInteractionCount": "5498"
+                },
+                {
+                  "@type": "InteractionCounter",
+                  "interactionType": "LikeAction",
+                  "interactionService": {
+                    "@type": "WebSite",
+                    "name": "YouTube"
+                  },
+                  "userInteractionCount": "17428"
+                }
+              ]
+            },
+            "@type": "Claim"
+          },
+          "reviewRating": {
+            "ratingValue": "",
+            "alternateName": null,
+            "@type": "Rating"
+          },
+          "datePublished": "2023-06-15T14:25:57+0000",
+          "url": "https://defacto-observatoire.fr/Medias/20-Minutes/Fact-checks/Rechauffement-climatique-Temperatures-en-baisse-hausse-du-niveau-de-la-mer-On-a-verifie-une-interview-virale/",
+          "claimReviewed": "Le GIEC écrit que la mer va monter de 15 mères. Elle monte de combien la mer ? Le GIEC le dit : de deux millimères par an. [ ...] Au bout de cinquante ans, vous aurez 10 centimères.",
+          "@type": "ClaimReview"
+        }
+      ],
+      "isBasedOnUrl": "https://www.20minutes.fr/planete/rechauffement-climatique/4040393-20230610-rechauffement-climatique-temperatures-baisse-hausse-niveau-mer-verifie-interview-virale#xtor=RSS-149",
+      "interactionStatistic": null
+    }
+  ]
+}

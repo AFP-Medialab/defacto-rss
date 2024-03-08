@@ -1,0 +1,57 @@
+{
+    "appearance":
+    {
+        "@context":
+        [
+            "https://schema.org",
+            {
+                "defacto": "https://github.com/AFP-Medialab/defacto-rss"
+            }
+        ],
+        "@type": "SocialMediaPosting",
+        "url": "https://youtube_link",
+        "identifier": "youtube_id",
+        "isPartOf":
+        {
+            "@type": "WebPage",
+            "dateCreated": "2018-09-24",
+            "countryOfOrigin":
+            {
+                "@type": "Country",
+                "name": "France"
+            },
+            "identifier": "id_12345_abcdefg",
+            "name": "Youtube Channel name",
+            "interactionStatistic":
+            [
+                {
+                    "@type": "InteractionCounter",
+                    "interactionType": "SubscribeAction",
+                    "interactionService":
+                    {
+                        "@type": "Website",
+                        "name": "YouTube"
+                    },
+                    "userInteractionCount": "698000"
+                },
+                {
+                    "@type": "InteractionCounter",
+                    "interactionType": "CreateAction",
+                    "interactionService":
+                    {
+                        "@type": "Website",
+                        "name": "YouTube"
+                    },
+                    "userInteractionCount": "3351",
+                    "result":
+                    {
+                        "@type": "VideoObject"
+                    }
+                }
+            ]
+        },
+        "datePublished": "2022-09-24",
+        "text": "",
+        "defacto:Hashtags": ""
+    }
+}

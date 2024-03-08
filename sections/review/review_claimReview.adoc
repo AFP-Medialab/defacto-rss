@@ -12,6 +12,10 @@
 :type_time: https://schema.org/Time[Time]
 :type_distance: https://schema.org/Distance[Distance]
 :type_quantitative_value: https://schema.org/QuantitativeValue[QuantitativeValue]
+:type_interactionCounter: https://schema.org/InteractionCounter[InteractionCounter]
+:type_integer: https://schema.org/Integer[Integer]
+:type_socialMediaPost: https://schema.org/SocialMediaPosting[SocialMediaPosting]
+:type_place: https://schema.org/Place[Place]
 === ClaimReview
 The expression of a ClaimReview defines additional properties compared to the Review type.
 
@@ -29,7 +33,7 @@ The full definition is available at https://schema.org/ClaimReview
 
 .ClaimReview structure example
 [source,json]
-include::{sourcedir}/claimreviw-structure.json[]
+include::{sourcedir}/claimreview-structure.json[]
 
 ==== ItemReviewed for ClaimReview
 This property contains the description of the claim that is checked by the fact-checker in ClaimReview. +
@@ -47,7 +51,7 @@ The full definition of the itemReviewed property is defined at https://schema.or
 | appearance | {type_url}, {type_creative_work}, Array[{type_url} or {type_creative_work}] | Links or descriptions of objects in which the statement appears. If there are several, the content is in the form of an array of CreativeWork links or descriptions
 |===
 
-===== Appearance with links
+=== Appearences
 The property *_appearance_*, defined on https://schema.org/appearance, indicates the occurrences where the declaration being checked is found. +
 The simplest representation is an URL accessible on the internet to the resource where the declaration is located (website, social network, etc.). +
 The most complex representation can be a description of material content (book, film, podcast, photography, etc.) of the CreativeWork type. +
@@ -75,11 +79,11 @@ The *_appearance_* is found exclusively in an *_itemReview_* of type *_Claim_*.
 ----
 NOTE: In the case of several links, the author defined in the itemReview is not necessarily the author of all the referenced links. To associate an author or a creator to each link, you must use the CreativeWork type for each *_appearance_*.
 
-===== Appearance CreativeWork
+==== Appearance with CreativeWork
 In order to give a finer description than a declaration, the property *_appearance_* can contain the occurrences of several media described by the type {type_creative_work}. +
 Using the CreativeWork type is sufficient to define all types. The list of properties below covers the requirements for embedding media (text, photo, video and audio).
 
-WARNING: the CreativeWork type is a generic type. It is advisable to use https://schema.org/CreativeWork#subtypes[subtypes] like MediaObject, Article, Blog, WebPage, etc. 
+WARNING: the CreativeWork type is a generic type. It is advisable to use https://schema.org/CreativeWork#subtypes[subtypes] like MediaObject, Article, Blog, WebPage, SocialMediaPost, etc. 
 
 [cols="2h,2, 5"]
 |===
@@ -116,7 +120,7 @@ https://schema.org/CreativeWork#subtypes
 | text | {type_text} | Full text content of the CreativeWork. Not to be confused with an abstract or brief description of the CreativeWork.
 
 |===
-
+===== MediaObject
 If the URL of the claim refers to a media (photo, video or audio), the type used should be MediaObject. In addition to the above properties, MediaObject properties can be added as a complement. 
 
 [cols="2h,2, 5a"]
@@ -140,7 +144,29 @@ The subtype should be specified for more granularity.
 | uploadedDate | {type_date} | Date the media was uploaded.
 |===
 
-===== CreativeWork
+===== SocialMediaPost
+
+If the URL of the claim refers to a social media post (Facebook, X (former Twitter), Youtube, Reddit, Instagram, Telegram, Mastodon etc.). The type used is SocialMediaPost.
+
+[cols="2h,2, 5"]
+|===
+3+|  https://schema.org/SocialMediaPost[SocialMediaPost] Properties
+
+| @type | {type_socialMediaPost} | A post to a social media platform, including blog posts, tweets, Facebook posts, etc.
+| url | {type_url} | Post URL where to find the post in the social media
+| identifier | {type_text} or {type_url} | Post unique identifier
+| creator | {type_organization} or {type_person}| Who create the content
+| isPartOf | {type_creative_work} or {type_url}| Item that this post is part of. It can be social media account or channel
+| datePublished| {type_date_time} or {type_date} | Date of first publication
+| contentLocation | {type_place} | Location from where the post's author says it is based.
+| keywords | {type_text}| keywords or hashtag attached to this post. Multiple textual entries in a keywords list are typically delimited by commas, or by repeating the property. 
+|===
+
+NOTE: *creator* or *isPartOf*. Both attributes are valid. However to define the post social account owner and to stay on Schema.org definition, *isPartOf* would be preferred. If creator is used, it will required to used some custom properties as define below.
+
+include::appearence/creator.adoc[]
+
+===== CreativeWork examples
 .AudioObject - Extract to audio track
 [source,json]
 include::{sourcedir}/audio-appearance.json[]
@@ -149,7 +175,42 @@ include::{sourcedir}/audio-appearance.json[]
 [source,json]
 include::{sourcedir}/video-appearance.json[]
 
+==== InteractionStatistics
+InteractionStatistics can be usefull to give metrics about the appearance actions (Like, shared, comments, etc).
+
+[cols="2h,2, 5a"]
+|===
+3+|  https://schema.org/interactionStatistic[interactionStatistic] Properties
+
+| @type | {type_interactionCounter} | CreativeWork subtype for media assets. +
+The subtype should be specified for more granularity.
+
+| interactionType | https://schema.org/InteractAction[InteractAction]| The act of interacting with another person or organization.
+Used action type:
+
+* https://schema.org/ShareAction[ShareAction]
+* https://schema.org/LikeAction[LikeAction]
+* https://schema.org/CommentAction[CommentAction]
+* https://schema.org/SubscribeAction[SubscribeAction]
+* https://schema.org/WatchAction[WatchAction]
+* defacto:EngagementAction (nb shared on Reddit only)
+
+
+| userInteractionCount | {type_integer} | The number of user interactions
+| interactionService | https://schema.org/WebSite[Website] | The website where the interactions took place
+
+|===
+
+.Interaction example.
+[source,json]
+include::{sourcedir}/appearance/interactionStatistic.json[]
+
+.SocialMediaPost - Creator and interactions.
+[source,json]
+include::{sourcedir}/appearance/social-media.json[]
+
 .ImageObject - Same image shared on different links.
 [source,json]
 include::{sourcedir}/image-appearance.json[]
 
+==== Appearance specialized content

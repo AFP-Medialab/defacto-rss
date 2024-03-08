@@ -1,6 +1,7 @@
 
 = A Guide to a RSS pivot format, including ClaimReview and MediaReview: For Fact Checks Feed Providers
 :doctype: book
+:title-page-background-image: cover-model.png
 :license-url: http://creativecommons.org/licenses/by-sa/4.0/
 :license-title: CC BY-SA 4.0
 //:notitle:
@@ -13,17 +14,19 @@
 :imagesdir: images
 
 :sourcedir: examples
-:revision: v1.1-preview-1
+:revision: 1.1
 
 :icons: font
 //:pdf-page-size: Letter
-:draftdate: March 14th 2023
+:draftdate: March 14th 2024
 :tpvercheck: 3.5.2
 
-:source-highlighter: pygments
+:source-highlighter: pygments.rb
 :pygments-style: paraiso-dark
+:page-background-image:
 
 image::defacto.jpg[]
+
 {doctitle}
 
 [cols="1,5"]

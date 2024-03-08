@@ -5,7 +5,18 @@
 
 The element *_schema:review_* is an enrichment of the RSS format which contains the expression of *_ClaimReview_* and *_MediaReview_* defined by the Schema.org community. The content is expressed in a *_CDATA_* to escape XML validation and is in JSON-LD format  https://www.w3.org/TR/json-ld/.
 
-The ClaimReview and MediaReview are subtypes of the same Review type defining the following common structure:
+The ClaimReview and MediaReview are subtypes of the same Review type defining the following common structure.
+All properties defines in this structure is using https//shema.org vocabulary by default.
+Some custom property names are defined for defacto and used following namespace definition:
+
+.Defacto namespace definition
+[source,json]
+---
+"@context": [
+      "https://schema.org",
+      { "defacto": "https://defacto-observatoire.fr/defacto-rss" }
+    ]
+---
 
 [cols="2h,2, 5"]
 |===

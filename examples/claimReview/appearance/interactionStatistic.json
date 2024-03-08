@@ -1,0 +1,53 @@
+{
+  "@context": [
+    "https://schema.org",
+    { "defacto": "https://defacto-observatoire.fr/defacto-rss" }
+  ],
+  "interactionStatistic": [
+    {
+      "@type": "InteractionCounter",
+      "interactionType": "CommentAction",
+      "interactionService": {
+        "@type": "WebSite",
+        "name": "Facebook"
+      },
+      "userInteractionCount": "20"
+    },
+    {
+      "@type": "InteractionCounter",
+      "interactionType": "ShareAction",
+      "interactionService": {
+        "@type": "WebSite",
+        "name": "Facebook"
+      },
+      "userInteractionCount": "4"
+    },
+    {
+      "@type": "InteractionCounter",
+      "interactionType": "ShareAction",
+      "interactionService": {
+        "@type": "WebSite",
+        "name": "Pinterest"
+      },
+      "userInteractionCount": "0"
+    },
+    {
+      "@type": "InteractionCounter",
+      "interactionType": "ShareAction",
+      "interactionService": {
+        "@type": "WebSite",
+        "name": "Twitter"
+      },
+      "userInteractionCount": "0"
+    },
+    {
+      "@type": "InteractionCounter",
+      "interactionType": "defacto:EngagementAction",
+      "interactionService": {
+        "@type": "WebSite",
+        "name": "Reddit"
+      },
+      "userInteractionCount": "0"
+    }
+  ]
+}

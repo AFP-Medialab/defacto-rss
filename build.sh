@@ -1,4 +1,4 @@
 echo "*** Producing HTML ***"
-asciidoctor Defactor_rss.adoc
+asciidoctor Defacto_rss.adoc
 echo "*** Producing PDF ***"
-asciidoctor-pdf Defactor_rss.adoc
+asciidoctor-pdf --theme defacto-theme.yml Defacto_rss.adoc

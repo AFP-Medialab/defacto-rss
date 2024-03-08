@@ -1,0 +1,51 @@
+{
+  "@context": [
+    "https://schema.org",
+    { "defacto": "https://defacto-observatoire.fr/defacto-rss" }
+  ],
+  "appearance": {
+    "url": "https://twitter.com/silvano_trotta/status/1735765521595875777",
+    "@type": "SocialMediaPosting",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "twitter.com"
+    },
+    "identifier": "1735765521595875777",
+    "datePublished": "2023-12-15T20:55:23",
+    "text": "Une très vaste étude japonaise montre l'impensable : \nPlus de 70% des personnes décédées après avoir été vaccinées avec le vaccin COVID-19 de Pfizer au Japon ont perdu la vie dans les 10 premiers jours suivant la vaccination.\n\nhttps://www.cureus.com/articles/199892-analysis-of-the-association-between-bnt162b2-mrna-covid-19-vaccination-and-deaths-within-10-days-after-vaccination-using-the-sex-ratio-in-japan#!/ https://twitter.com/silvano_trotta/status/1735765521595875777/photo/1",
+    "creator": {
+      "@type": "defacto:SocialMediaAccount",
+      "defacto:dateCreated": "2009-04-18T12:29:18",
+      "identifier": "1735765521595875777",
+      "name": "SILVANO TROTTA OFFICIEL",
+      "interactionStatistic": [
+        {
+          "@type": "InteractionCounter",
+          "interactionType": "FollowAction",
+          "interactionService": {
+            "@type": "WebSite",
+            "name": "Twitter"
+          },
+          "userInteractionCount": 176726
+        }
+      ]
+    },
+    "interactionStatistic": [
+      {
+        "@type": "InteractionCounter",
+        "interactionType": "ShareAction",
+        "interactionService": {
+          "@type": "WebSite",
+          "name": "Twitter"
+        },
+        "userInteractionCount": "1179"
+      }
+    ],
+    "sharedContent": [
+      {
+        "@type": "ImageObject",
+        "contentURL": "https://pbs.twimg.com/media/GBatcY9XQAAFLrA.jpg"
+      }
+    ]
+  }
+}

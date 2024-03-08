@@ -1,2 +1,5 @@
 *.pdf
 *.html
+*.xml
+*.docx
+.vscode
