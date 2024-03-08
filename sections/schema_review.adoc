@@ -3,7 +3,7 @@
 
 == schema:review
 
-The element *_schema:review_* is an enrichment of the RSS format which contains the expression of *_ClaimReview_* and *_MediaReview_* defined by the Schema.org community. The content is expressed in a *_CDATA_* to escape XML validation and is in JSON-LD format  https://www.w3.org/TR/json-ld/.
+The element *_schema:review_* is an enrichment of the RSS format. It contains the expression of *_ClaimReview_* and *_MediaReview_* defined by the Schema.org community. The content is expressed in a *_CDATA_* to escape XML validation and is in JSON-LD format  https://www.w3.org/TR/json-ld/.
 
 The ClaimReview and MediaReview are subtypes of the same Review type defining the following common structure.
 All properties defines in this structure is using https//shema.org vocabulary by default.

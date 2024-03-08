@@ -15,7 +15,7 @@ Content that embeded media contents such images and videos uses HTML5 element *f
 [cols="1h,5"]
 |===
 2+|class attribute for media
-|g2picture footnote:[AFP NewsMLG2 guide defines g2picture. g2image can be aloso used by is deprecated
+|g2picture footnote:[AFP NewsMLG2 guide defines g2picture. g2image can be also used but it is deprecated.
  cf https://www.afp.com/communication/iris/Guide_to_AFP_NewsML-G2.html#heading_toc_j_62]| any image content (gif, jpg, png, etc)
 |g2video | any video content (mp4, ogg, etc)
 |===

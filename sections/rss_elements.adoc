@@ -27,6 +27,8 @@ https://www.rssboard.org/rss-profile#element-channel-item
 
 include::rss/item_rss.adoc[]
 
+include::rss/content_rss.adoc[]
+
 include::rss/media_rss.adoc[]
 
 include::rss/feed_rss.adoc[]

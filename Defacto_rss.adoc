@@ -39,7 +39,7 @@ image::defacto.jpg[]
 | 0.4 | Benjamin Ooghe-Tabanou (Sciences Po médialab) 
 | 0.5 | Denis Teyssou (AFP) 
 | 1.0 | Stéphane Laurière (XWiki SAS) 
-| {revision} | Bertrand Goupil (AFP) 
+| {revision} | Bertrand Goupil, Hugues Lafarge (AFP), Kelly Christensen (Sciences Po médialab) 
 |===
 
 image::defacto-partners.jpg[]
