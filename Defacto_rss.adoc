@@ -84,3 +84,4 @@ Richer in metadata the content will be, easier it will be to build disinformatio
 * Translating the video and visual fact-check terminology to Schema.org structured data : https://docs.google.com/document/d/1jRbX2IesVQrWvKpehb8ntSMKe0D88bZp3nK8ZAjq6E4/edit 
 * Claim review project:  https://www.claimreviewproject.com/mediareview/an-open-process 
 * Duke Reporters Lab Tech & Check news: https://reporterslab.org/tech-and-check/
+* Scripts and documentation for De Facto database enrichment: https://github.com/medialab/defacto-enrichment-public

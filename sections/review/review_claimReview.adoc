@@ -185,7 +185,7 @@ InteractionStatistics can be usefull to give metrics about the appearance action
 | @type | {type_interactionCounter} | CreativeWork subtype for media assets. +
 The subtype should be specified for more granularity.
 
-| interactionType | https://schema.org/InteractAction[InteractAction]| The act of interacting with another person or organization.
+| interactionType footnote:[Interaction are extracted to populate Defacto database: https://github.com/medialab/defacto-enrichment-public[https://github.com/medialab/defacto-enrichment-public]] | https://schema.org/InteractAction[InteractAction]| The act of interacting with another person or organization.
 Used action type:
 
 * https://schema.org/ShareAction[ShareAction]
