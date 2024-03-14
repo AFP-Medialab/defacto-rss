@@ -1,5 +1,5 @@
 
-= A Guide to a RSS pivot format, including ClaimReview and MediaReview: For Fact Checks Feed Providers
+= D1.6 Fact-Checking Pivot Format - A Guide to a RSS pivot format, including ClaimReview and MediaReview: For Fact Checks Feed Providers
 :doctype: book
 :title-page-background-image: cover-model.png
 :license-url: http://creativecommons.org/licenses/by-sa/4.0/
@@ -10,6 +10,7 @@
 :toclevels: 5
 :sectnums:
 :sectnumlevels: 5
+:!chapter-signifier:
 
 :imagesdir: images
 
