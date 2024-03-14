@@ -1,5 +1,6 @@
 :sectnums:
 :sectnumlevels: 4
+:sourcedir: ../examples
 
 == RSS elements
 The description of the recommended RSS pivot format reuses the standards defined by the RSS 2.0 format as well as the existing extensions.
@@ -15,18 +16,22 @@ The full RSS format specification can be accessed at https://www.rssboard.org/rs
 |===
 
 === channel
-[cols="1h,5"]
+[cols="2h,5"]
 |===
 2+| Elements
 
 | title | Title of the RSS feed
 | link | Link of the RSS feed or homepage of the site
 | language | Language of the RSS feed
-| at:delete-entry footnote:[cf: https://datatracker.ietf.org/doc/html/rfc6721[https://datatracker.ietf.org/doc/html/rfc6721]]| Element used for an item that has been
+| at:delete-entry footnote:[The Atom "deleted-entry" Element: https://datatracker.ietf.org/doc/html/rfc6721[https://datatracker.ietf.org/doc/html/rfc6721]]| Element used for an item, in the RSS feed, that has been
    removed or should not be used (kill). Namespace declation should be added in the rss content xmlns:at="http://purl.org/atompub/tombstones/1.0".
 | item | An *item* for each publication of a verification article (fact-check).
 https://www.rssboard.org/rss-profile#element-channel-item
 |===
+
+.Example RSS channel
+[source, XML]
+include::{sourcedir}/rss/kill-example.xml[]
 
 include::rss/item_rss.adoc[]
 

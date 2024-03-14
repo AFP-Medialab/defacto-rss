@@ -31,7 +31,6 @@ Assessing the truthfulness of the statement by a word or short text. There is no
 include::{sourcedir}/claimReview/rating.json[]
 
 .Example values ​​for the alternateName (indexed by https://toolbox.google.com/factcheck/explorer[Google FactCheck Explorer])
-
 [cols="1h,3"]
 |===
 | False | https://toolbox.google.com/factcheck/explorer/search/false;hl=en

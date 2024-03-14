@@ -42,15 +42,15 @@ Possilbe values:
 * *credit* => For media credit with *author* or/and *provider*
 |===
 
-.Example Image with description & credit
+.Example image with description & credit
 [source,html]
 include::{sourcedir}/content/image-content.htm[]
 
-.Example Animated Video with description & credit
+.Example animated video with description & credit
 [source,html]
 include::{sourcedir}/content/video-content.htm[]
 
-===== Animated video as Animated Gif
+===== Animated video as animated Gif
 Animated video are short videos that act as animated Gif. In order to behave as such, *video* HTML element should use the following attributes:
 
 * autoplay

@@ -1,0 +1,4 @@
+== Conclusion
+
+This document provides an on-going state-of-the art and recommendation to use ClaimReview and MediaReview within Fact-checking RSS feeds in order to facilitate automation of content ingestion within the De Facto project, that can be useful also for EDMO regional and national hubs platforms. 
+Richer in metadata the content will be, easier it will be to build disinformation databases for Social Sciences afterwards. The enrichment in metadata can also take place on each disinformation observatory platform. In this respect, we welcome feedback on this document to continue the discussion on this topic and to improve this document. Feel free to connect with medialab@afp.com for this purpose.

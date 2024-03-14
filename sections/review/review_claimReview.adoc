@@ -77,13 +77,13 @@ The *_appearance_* is found exclusively in an *_itemReview_* of type *_Claim_*.
 	]
 }
 ----
-NOTE: In the case of several links, the author defined in the itemReview is not necessarily the author of all the referenced links. To associate an author or a creator to each link, you must use the CreativeWork type for each *_appearance_*.
+NOTE: In the case of several links, the author defined in the itemReview is not necessarily the author of all referenced links. To associate author or creator to each links, you must use CreativeWork type for each *_appearance_*.
 
 ==== Appearance with CreativeWork
 In order to give a finer description than a declaration, the property *_appearance_* can contain the occurrences of several media described by the type {type_creative_work}. +
 Using the CreativeWork type is sufficient to define all types. The list of properties below covers the requirements for embedding media (text, photo, video and audio).
 
-WARNING: the CreativeWork type is a generic type. It is advisable to use https://schema.org/CreativeWork#subtypes[subtypes] like MediaObject, Article, Blog, WebPage, SocialMediaPost, etc. 
+WARNING: The CreativeWork type is a generic type. It is advisable to use https://schema.org/CreativeWork#subtypes[subtypes] like MediaObject, Article, Blog, WebPage, SocialMediaPost, etc. 
 
 [cols="2h,2, 5"]
 |===
@@ -144,29 +144,6 @@ The subtype should be specified for more granularity.
 | uploadedDate | {type_date} | Date the media was uploaded.
 |===
 
-===== SocialMediaPost
-
-If the URL of the claim refers to a social media post (Facebook, X (former Twitter), Youtube, Reddit, Instagram, Telegram, Mastodon etc.). The type used is SocialMediaPost.
-
-[cols="2h,2, 5"]
-|===
-3+|  https://schema.org/SocialMediaPost[SocialMediaPost] Properties
-
-| @type | {type_socialMediaPost} | A post to a social media platform, including blog posts, tweets, Facebook posts, etc.
-| url | {type_url} | Post URL where to find the post in the social media
-| identifier | {type_text} or {type_url} | Post unique identifier
-| creator | {type_organization} or {type_person}| Who create the content
-| isPartOf | {type_creative_work} or {type_url}| Item that this post is part of. It can be social media account or channel
-| datePublished| {type_date_time} or {type_date} | Date of first publication
-| contentLocation | {type_place} | Location from where the post's author says it is based.
-| keywords | {type_text}| keywords or hashtag attached to this post. Multiple textual entries in a keywords list are typically delimited by commas, or by repeating the property. 
-|===
-
-NOTE: *creator* or *isPartOf*. Both attributes are valid. However to define the post social account owner and to stay on Schema.org definition, *isPartOf* would be preferred. If creator is used, it will required to used some custom properties as define below.
-
-include::appearence/creator.adoc[]
-
-===== CreativeWork examples
 .AudioObject - Extract to audio track
 [source,json]
 include::{sourcedir}/audio-appearance.json[]
@@ -175,7 +152,32 @@ include::{sourcedir}/audio-appearance.json[]
 [source,json]
 include::{sourcedir}/video-appearance.json[]
 
-==== InteractionStatistics
+.ImageObject - Same image shared on different links.
+[source,json]
+include::{sourcedir}/image-appearance.json[]
+
+===== SocialMediaPost
+
+If the URL of the claim refers to a social media post (Facebook, X (former Twitter), Youtube, Reddit, Instagram, Telegram, Mastodon etc.). The type used is https://schema.org/SocialMediaPosting.
+
+[cols="2h,2, 5"]
+|===
+3+|  https://schema.org/SocialMediaPost[SocialMediaPost] Properties
+
+| @type | {type_socialMediaPost} | A post to a social media platform, including blog posts, tweets, Facebook posts, etc.
+| url | {type_url} | Post URL where to find the post in the social media.
+| identifier | {type_text} or {type_url} | Post unique identifier.
+| creator | {type_organization} or {type_person}| Who create the content.
+| isPartOf | {type_creative_work} or {type_url}| Item that this post is part of. It can be a social media account or a channel.
+| datePublished| {type_date_time} or {type_date} | Date of first publication.
+| contentLocation | {type_place} | Location from where the post's author says it is based.
+| keywords | {type_text}| Keywords or hashtag attached to this post. Multiple textual entries in a keyword list are typically delimited by commas(,) or by repeating the property. 
+|===
+
+NOTE: Using *creator* or *isPartOf*? Both attributes are valid. However to define the post' social account owner and to stay on Schema.org definition, *isPartOf* would be preferred. If *creator* is used, it will required to used some custom properties as defined below.
+
+include::appearence/creator.adoc[]
+
 InteractionStatistics can be usefull to give metrics about the appearance actions (Like, shared, comments, etc).
 
 [cols="2h,2, 5a"]
@@ -209,8 +211,3 @@ include::{sourcedir}/appearance/interactionStatistic.json[]
 [source,json]
 include::{sourcedir}/appearance/social-media.json[]
 
-.ImageObject - Same image shared on different links.
-[source,json]
-include::{sourcedir}/image-appearance.json[]
-
-==== Appearance specialized content

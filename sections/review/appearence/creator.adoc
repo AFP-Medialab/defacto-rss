@@ -6,15 +6,15 @@
 :type_organization: https://schema.org/Organization[Organization]
 :type_url: https://schema.org/URL[URL]
 
-This is a Defacto's extension of both {type_person} and {type_organization} that's define social media content creator.
+This is a Defacto's extension of both {type_person} and {type_organization} that's defines social media content's creator.
 [cols="2h,2, 5"]
 |===
 3+|  https://schema.org/creator[creator] Properties
 
-| @type | https://schema.org/InteractionCounter[defacto:SocialMediaPosting] | {type_person} or {type_organization} base extension for defacto. It defines a social media account from where the post come from. All properties define in these 2 types are inherited.
-| defacto:dateCreated |{type_date_time}, {type_date}  | Date creation of the social media account
-| defacto:locationCreated | {type_text} | Country code representing from where the post's author says they are based
-| identifier | {type_text} or {type_url} | Post unique identifier
-| name | {type_text} | Account name shows in the social media
-| interactionStatistic |  link:https://schema.org/InteractionCounter[InteractionCounter] | Metrics representing how Internet users interact with this creator.
+| @type | https://schema.org/InteractionCounter[defacto:SocialMediaPosting] | {type_person} or {type_organization} based extension for defacto. It defines a social media account from where the post comes from. All properties define in these 2 types are inherited.
+| defacto:dateCreated |{type_date_time}, {type_date}  | Date creation of the social media account.
+| defacto:locationCreated | {type_text} | Country code representing from where the post's author says they are based.
+| identifier | {type_text} or {type_url} | Post's unique identifier.
+| name | {type_text} | Account name shows in the social media.
+| interactionStatistic |  link:https://schema.org/InteractionCounter[InteractionCounter] | Metrics representing how users interact with this creator.
 |===
